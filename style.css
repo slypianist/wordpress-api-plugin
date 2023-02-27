@@ -1,0 +1,169 @@
+.md\:flex {
+	display: flex;
+}
+.mx-2 {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.form{
+    margin-right: -117px !important;
+margin-left: 15rem !important;
+color: #813297;
+}
+/*
+
+Preloaders
+
+*/
+#preloading.show{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    
+}
+
+#preloading{
+    display:none;
+}
+
+#searchProgress{
+    display:none;
+}
+
+#searchProgress.show{
+    display:block;
+}
+
+#listingTable{
+    display: inline-table;
+}
+
+#listingTable.show{
+    display: none;
+}
+
+.text-primary {
+	--tw-text-opacity: 1;
+	color: rgb(89 5 141 / var(--tw-text-opacity));
+}
+.px-10 {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.rounded {
+	border-radius: .25rem;
+}
+[type="text"], select {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border-color: #6b7280;
+	border-width: 1px;
+	border-radius: 0;
+	padding: .5rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	--tw-shadow: 0 0 #0000;
+}
+
+button, input, optgroup, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(1rem * var(--tw-space-x-reverse));
+	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.text-primary {
+	--tw-text-opacity: 1;
+	color: rgb(89 5 141 / var(--tw-text-opacity));
+}
+
+.px-10 {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.rounded {
+	border-radius: .25rem;
+}
+
+.w-full {
+	width: 40%;
+}
+
+.block {
+	display: block;
+}
+
+select {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+	background-position: right .5rem center;
+	background-repeat: no-repeat;
+	background-size: 1.5em 1.5em;
+	padding-right: 2.5rem;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact;
+}
+button, select {
+	text-transform: none;
+}
+button, input, optgroup, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+
+.px-\[44px\] {
+	padding-left: 44px;
+	padding-right: 44px;
+}
+
+.text-primary{
+    color: #813297 !important;
+}
+
+.py-2 {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+.bg-white {
+	--tw-bg-opacity: 1;
+	background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.rounded {
+	border-radius: .25rem;
+}
+.flex {
+	display: flex;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+	-webkit-appearance: button;
+	background-color: transparent;
+	background-image: none;
+}
+
+#map_wrapper
+{
+    height: 400px;
+}
+
+#map_canvas
+{
+    width: 100%;
+    height: 100%;
+}

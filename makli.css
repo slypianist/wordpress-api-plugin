@@ -1,0 +1,7269 @@
+@import "//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,900|Open+Sans:800,400|Roboto";
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.8.3";
+
+.ptsc_group_carousel .ptsc_table_group_col {
+    min-width: 100px !important;
+}
+
+.ptsc_alert {
+    padding: 10px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.ptsc_alert.ptsc_alert_success {
+    background: #d8eed8;
+    color: #449d44;
+    border-color: #a3d7a3;
+}
+
+.ptsc_alert.ptsc_alert_info {
+    background: #f0f9fc;
+    color: #31b0d5;
+    border-color: #b0e1ef;
+}
+
+.ptsc_alert.ptsc_alert_warning {
+    background: #fef9f3;
+    color: #ec971f;
+    border-color: #f8d9ac;
+}
+
+.ptsc_alert.ptsc_alert_danger {
+    background: #f9e2e2;
+    color: #c9302c;
+    border-color: #eba5a3;
+}
+
+.x-column {
+    max-width: 100% !important;
+}
+
+.ptsc_hidden {
+    display: none;
+}
+
+.ptsc_has_tooltip {
+    cursor: help;
+    z-index: 99;
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+}
+
+.ptsc_has_tooltip .ptsc_tooltip {
+    background: orange;
+    top: 0;
+    right: -100%;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    transition: all 0.25s ease-out;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+.ptsc_has_tooltip .ptsc_tooltip:before {
+    content: " ";
+    display: block;
+    width: 40px;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.ptsc_has_tooltip .ptsc_tooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 20px 10px;
+    border-color: transparent orange transparent transparent;
+    left: -40px;
+    top: 10px;
+}
+
+.ptsc_has_tooltip:hover .ptsc_tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.lte8 .wrapper .ptsc_tooltip {
+    display: none;
+}
+
+.lte8 .ptsc_has_tooltip:hover .ptsc_tooltip {
+    display: block;
+}
+
+.ptsc_table_group .ptsc.ptsc_pricing_table .ptsc_price_toggle {
+    display: none;
+}
+
+.ptsc_price_toggle {
+    text-align: center;
+}
+
+.ptsc_price_toggle input {
+    display: none;
+}
+
+.ptsc_price_toggle input:checked.ptsc_price_toggle input + span {
+    background-color: #A5DC86;
+    box-shadow: none;
+}
+
+.ptsc_price_toggle label {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.ptsc_price_toggle label span {
+    display: block;
+    padding: 6px;
+    transition: all 0.1s ease-in-out;
+    background: transparent;
+}
+
+
+.ptsc_price_toggle input[type=radio]:checked + span {
+    font-weight: 500;
+}
+
+.ptsc_price_toggle label * {
+    font-size: 14px;
+}
+
+.ptsc_error {
+    background-color: #f2dede;
+    border: 1px solid #ebcccc;
+    color: #a94442;
+    padding: 15px 15px 15px 45px;
+    position: relative;
+}
+
+.ptsc_error:before {
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    font-size: 1.4em;
+    text-align: center;
+    content: "\f05a";
+    height: 20px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ptsc_submit {
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+.ptsc_combo {
+    display: none !important;
+}
+
+.ptsc_pricing_table {
+    box-sizing: border-box;
+    background: #eee;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #d5d5d5;
+}
+
+.ptsc_pricing_table * {
+    box-sizing: border-box;
+}
+
+.ptsc_pricing_table:after {
+    box-sizing: border-box;
+}
+
+.ptsc_pricing_table:before {
+    box-sizing: border-box;
+}
+
+.ptsc_pricing_table .ptsc_heading h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.ptsc_pricing_table .whmp_text {
+    padding: 15px 0;
+}
+
+.ptsc_pricing_table .whmp_text p {
+    margin: 0;
+    padding: 0;
+}
+
+.ptsc_pricing_table .ptsc_features ul {
+    margin: 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ptsc_pricing_table .ptsc_features ul li {
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.ptsc_pricing_table .ptsc_features ul li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_pricing_table .ptsc_price {
+    padding: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1;
+    background: #d5d5d5;
+    margin: 0 -15px;
+}
+
+.ptsc_pricing_table .ptsc_price .ptsc_fraction {
+    font-size: 40%;
+}
+
+.ptsc_pricing_table .ptsc_price .ptsc_unit {
+    font-size: 40%;
+}
+
+.ptsc_pricing_table .ptsc_price .ptsc_period {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    word-spacing: 0;
+}
+
+.ptsc_pricing_table.simple-02.featured {
+    transform: scaleY(1.05) !important;
+}
+
+.ptsc_pricing_table .ptsc_button {
+    padding: 15px;
+    text-align: center;
+}
+
+.ptsc_pricing_table .ptsc_button .ptsc_submit-button {
+    background: #FB4400;
+    /*border: 2px solid #c83600;*/
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    font-weight: 300;
+}
+
+.ptsc_pricing_table .ptsc_button .ptsc_submit-button:hover {
+    background: #c83600;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_icon {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: -50px;
+    left: 0;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_icon .ptsc_holder {
+    background: #999;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-01 .whmp_text {
+    display: block;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_heading h2 {
+    padding-bottom: 0;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_price {
+    margin-right: 0px;
+    margin-left: 0px;
+    background: #bbb;
+    color: #333;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_submit-button {
+    background: #337ab7;
+    border: 1px solid #285f8f;
+}
+
+.ptsc_pricing_table.comparison-01 .ptsc_submit-button:hover {
+    background: #285f8f;
+}
+
+.ptsc_pricing_table.comparison-01.featured {
+    background: #4796b3;
+    border-color: #39778e;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-01.featured .ptsc_icon .ptsc_holder {
+    background: #2776b3;
+    border: 3px solid #fff;
+}
+
+.ptsc_pricing_table.comparison-01.featured .ptsc_price {
+    background: #2776b3;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-01.featured .ptsc_heading h2 {
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-02 {
+    background: #fff;
+    padding-top: 0;
+    border: 2px solid #333;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_icon {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_heading {
+    padding-bottom: 60px;
+    margin-left: 0px;
+    margin-right: -2px;
+    padding-top: 25px;
+    background: #333;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_heading h2 {
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 0 0 5px 5px #666;
+    margin-top: -50px;
+    padding: 0;
+    background: #fff;
+    border: 3px solid #fff;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_price .ptsc_amount {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_price .ptsc_fraction {
+    font-size: 18px;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_price .ptsc_unit {
+    font-size: 18px;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_button .ptsc_submit-button {
+    background: #00ab00;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-02 .ptsc_button .ptsc_submit-button:hover {
+    background: #007800;
+}
+
+.ptsc_pricing_table.comparison-02.featured {
+    background: #333;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-02.featured .ptsc_price {
+    border-color: #777;
+    box-shadow: none;
+    color: #333;
+}
+
+.ptsc_pricing_table.comparison-03 {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+
+.ptsc_pricing_table.comparison-03 .ptsc_icon {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-03 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-03 .ptsc_text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-03 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-03 .ptsc_button .ptsc_submit-button {
+    border-radius: 4px;
+    background: #ff4d00;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-03 .ptsc_button .ptsc_submit-button:hover {
+    background: #cc3e00;
+}
+
+.ptsc_pricing_table.comparison-03.featured {
+    border-color: #ff4d00;
+}
+
+.ptsc_pricing_table.comparison-03.featured .ptsc_price {
+    color: #fff;
+    background: #ff4d00;
+}
+
+.ptsc_pricing_table.comparison-04 {
+    border: 0;
+    background: #42444a;
+    border-radius: 10px;
+    color: #fff;
+    padding-top: 25px;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_icon {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #42444a;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid #fff;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_price .ptsc_amount {
+    font-size: 38px;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_price .ptsc_fraction {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_price .ptsc_period {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_price .ptsc_unit {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_heading h2 {
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_submit-button {
+    background: #84c9f6;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-04 .ptsc_submit-button:hover {
+    background: #54b4f3;
+}
+
+.ptsc_pricing_table.comparison-04.featured {
+    background: #54b4f2;
+}
+
+.ptsc_pricing_table.comparison-04.featured .ptsc_price {
+    background: #54b4f2;
+}
+
+.ptsc_pricing_table.comparison-05 {
+    background: #323232;
+    color: #fff;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_icon {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_heading {
+    background: gold;
+    color: #323232;
+    margin-top: -30px;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_heading h2 {
+    margin: 0;
+    padding-bottom: 0;
+    line-height: 60px;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_price {
+    position: relative;
+    background: 0 0;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_price .ptsc_fraction {
+    position: absolute;
+    top: 20px;
+    font-size: 25px;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_submit-button {
+    background: gold;
+    color: #333;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-05 .ptsc_submit-button:hover {
+    background: #daa520;
+    color: #333;
+}
+
+.ptsc_pricing_table.comparison-06 {
+    background: #3399fe;
+    color: #fff;
+    padding-top: 30px;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_icon {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_heading h2 {
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_price {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: #62b2fe;
+    border: 5px solid #4eaefd;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    padding: 30px 20px 0 0;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_price .ptsc_fraction {
+    position: absolute;
+    top: 40px;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_features ul li {
+    border-color: #1379de;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_submit-button {
+    background: #1379de;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ptsc_pricing_table.comparison-06 .ptsc_submit-button:hover {
+    background: #0f5faf;
+}
+
+.ptsc_pricing_table.comparison-06.featured .ptsc_promo-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+.ptsc_pricing_table.comparison-06.featured .ptsc_price {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    width: auto;
+}
+
+.ptsc_pricing_table.comparison-07 {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0 -2px 2px 2px #ccc;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_icon {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_text {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_heading {
+    background: #fda462;
+    margin: 0 0 10px;
+    box-shadow: 0 0 2px 2px #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_heading h2 {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_price {
+    position: relative;
+    margin: 0;
+    box-shadow: 0 -1px 2px 2px #ccc;
+    background: #fd8730;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_price .ptsc_unit {
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_price .ptsc_amount {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_price .ptsc_fraction {
+    position: absolute;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_price .ptsc_period {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_features ul {
+    margin: 0;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_features ul li {
+    color: #f56a05;
+    border: none;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_features ul li:nth-child(even) {
+    background: #fdeadc;
+}
+
+.ptsc_pricing_table.comparison-07 .ptsc_submit-button {
+    background: #fda462;
+    border: 0;
+}
+
+.ptsc_pricing_table.comparison-07.featured .ptsc_promo-text {
+    position: absolute;
+    display: block;
+    top: 57px;
+    width: 120px;
+    left: 0;
+    right: 0;
+    background: orange;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 2px 2px #ccc;
+    z-index: 10;
+}
+
+.ptsc_pricing_table.comparison-07.featured .ptsc_heading {
+    background: #f56a05;
+}
+
+.ptsc_pricing_table.comparison-07.featured .ptsc_features ul li:nth-child(odd) {
+    background: #fda462;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-07.featured .ptsc_features ul li:nth-child(even) {
+    background: #fd8730;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-07.featured .ptsc_button {
+    background: #f56a05;
+}
+
+.ptsc_pricing_table.comparison-08 {
+    background: #EEE;
+    border: 0;
+    padding: 0;
+}
+
+.ptsc_pricing_table.comparison-08 .ptsc_heading {
+    padding-top: 20px;
+    background: 0;
+}
+
+.ptsc_pricing_table.comparison-08 .ptsc_price {
+    margin: 0;
+    background: 0;
+}
+
+.ptsc_pricing_table.comparison-08 .ptsc_price .ptsc_amount {
+    font-size: 45px;
+    font-weight: 800;
+    color: #86C724;
+}
+
+.ptsc_pricing_table.comparison-08 .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_pricing_table.comparison-08 .ptsc_button .ptsc_submit-button {
+    background: #2A363F;
+    border: 0;
+    border-radius: 4px;
+}
+
+.ptsc_pricing_table.comparison-08 .ptsc_button .ptsc_submit-button:hover {
+    background: #86C724;
+}
+
+.ptsc_pricing_table.comparison-08.featured {
+    background: #2A363F;
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-08.featured .ptsc_promo-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #86C724;
+    line-height: 2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ptsc_pricing_table.comparison-08.featured .ptsc_heading h2 {
+    color: #fff;
+}
+
+.ptsc_pricing_table.comparison-08.featured .ptsc_button .ptsc_submit-button {
+    background: #eee;
+    color: #2A363F;
+}
+
+.ptsc_pricing_table.comparison-08.featured .ptsc_button .ptsc_submit-button:hover {
+    background: #86C724;
+    color: #fff;
+}
+
+.ptsc_pricing_table.alaska {
+    border: 0;
+    background: #f8f8f8;
+    padding-top: 20px;
+}
+
+.ptsc_pricing_table.alaska .ptsc_icon .holder {
+    background: #fd4326;
+    height: 78px;
+    width: 78px;
+    border-radius: 78px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.ptsc_pricing_table.alaska .ptsc_icon .holder .fa {
+    font-size: 27px;
+    line-height: 78px;
+}
+
+.ptsc_pricing_table.alaska .ptsc_heading h2 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 17px 0 20px;
+}
+
+.ptsc_pricing_table.alaska .ptsc_price {
+    background: #ebebeb;
+    color: #fd4326;
+    font-size: 40px;
+    line-height: 26px;
+}
+
+.ptsc_pricing_table.alaska .ptsc_price .ptsc_amount {
+    font-size: 100%;
+}
+
+.ptsc_pricing_table.alaska .ptsc_price .ptsc_fraction {
+    font-size: 100%;
+}
+
+.ptsc_pricing_table.alaska .ptsc_price .ptsc_unit {
+    font-size: 100%;
+}
+
+.ptsc_pricing_table.alaska .ptsc_price .ptsc_period {
+    font-size: 14px;
+    display: inline;
+}
+
+.ptsc_pricing_table.alaska .ptsc_summary {
+    font-family: Roboto, sans-serif;
+    padding: 20px 5px;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.ptsc_pricing_table.alaska .ptsc_button .ptsc_submit-button {
+    border-radius: 4px;
+    border: 1px solid #fd4326;
+    background: #fd4326;
+    color: #fff;
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+.ptsc_pricing_table.alaska .ptsc_button .ptsc_submit-button:hover {
+    background: #fff;
+    color: #fd4326;
+}
+
+.ptsc_pricing_table.simple-09 {
+    border: 1px solid #ccc;
+    background: 0;
+    padding-top: 35px;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_heading {
+    background: 0;
+    padding-bottom: 20px;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_heading h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 23px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_price {
+    color: #000;
+    padding: 0;
+    background: 0;
+    font-size: 46px;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_price .ptsc_unit {
+    vertical-align: super;
+    font-size: 40%;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_price .ptsc_fraction {
+    font-size: 40%;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_price .ptsc_period {
+    color: gray;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_button .ptsc_submit-button {
+    border: 0;
+    background-color: #ffd800;
+    padding: 16px 32px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ptsc_pricing_table.simple-09 .ptsc_button .ptsc_submit-button:hover {
+    background-color: #ffea00;
+    color: #333;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.ptsc_comparison_table {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    min-width: 640px;
+}
+
+.ptsc_comparison_table * {
+    box-sizing: border-box;
+}
+
+.ptsc_comparison_table:after {
+    box-sizing: border-box;
+}
+
+.ptsc_comparison_table:before {
+    box-sizing: border-box;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-box-align: end;
+    align-items: flex-end;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row.ptsc_comparison_table_section_content {
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row.ptsc_comparison_table_section_summary {
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_col > h2 {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_col > p {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_heading {
+    background: #42444a;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_content {
+    background: #dfdfdf;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li:nth-child(odd) {
+    background: #efefef;
+    border-bottom-color: #efefef;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: #e1e1e1;
+    border-bottom-color: #e1e1e1;
+}
+
+.ptsc_comparison_table ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_titles li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #adadad;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_titles li .ptsc_feature_title_text {
+    display: block;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_titles li:last-child {
+    border: 0;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_titles li.ptsc_has_tooltip {
+    padding-left: 20px;
+    position: relative;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_titles li.ptsc_has_tooltip:before {
+    width: 20px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    content: "\f059";
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #adadad;
+    text-align: center;
+    position: relative;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li .ptsc_feature_title_text {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li:last-child {
+    border: 0;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li .fa {
+    font-size: 1.15em;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #0e0;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li .fa.ptsc_icon_no {
+    color: #e00;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li.ptsc_has_tooltip {
+    padding-left: 20px;
+    position: relative;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_feature_values li.ptsc_has_tooltip:before {
+    width: 20px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    content: "\f059";
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ptsc_comparison_table .ptsc_comp_feature_title_responsive {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_summary .ptsc_pricing_table {
+    margin: 0;
+    border-top: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_summary .ptsc_pricing_table .ptsc_heading {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_section_summary .ptsc_pricing_table .ptsc_price {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_price_caption {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_plan_description_responsive {
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_discounts_container {
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+}
+
+.ptsc_comparison_table .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    border-radius: 4px 4px 4px 0;
+    font-size: 1.3em;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.ptsc_comparison_table .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 6px 0 0;
+    border-color: orange transparent transparent transparent;
+    bottom: -10px;
+    left: 0;
+}
+
+.ptsc_comparison_table .ptsc_discounts_container .ptsc_discount_text {
+    display: block;
+}
+
+.ptsc_comparison_table .ptsc_discounts_container .ptsc_discount_value {
+    display: block;
+}
+
+.ptsc_comparison_table .ptsc_pricing_table .ptsc_discounts_container .ptsc_holder {
+    font-size: .8em;
+    border-radius: 4px 0 4px 4px;
+    margin-bottom: 0;
+}
+
+.ptsc_comparison_table .ptsc_pricing_table .ptsc_discounts_container .ptsc_holder:after {
+    top: -10px;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: auto;
+    bottom: auto;
+}
+
+.ptsc_comparison_table.one_col .ptsc_comparison_table_col {
+    width: 50%;
+}
+
+.ptsc_comparison_table.two_cols .ptsc_comparison_table_col {
+    width: 33.33%;
+}
+
+.ptsc_comparison_table.three_cols .ptsc_comparison_table_col {
+    width: 25%;
+}
+
+.ptsc_comparison_table.four_cols .ptsc_comparison_table_col {
+    width: 20%;
+}
+
+.ptsc_comparison_table.first {
+    padding-top: 70px;
+}
+
+.ptsc_comparison_table.first .ptsc_comparison_table_section_heading {
+    background: #4796b3;
+}
+
+.ptsc_comparison_table.first .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #337ab7;
+}
+
+.ptsc_comparison_table.first .ptsc_price_toggle input:checked.ptsc_comparison_table.first .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #4796b3;
+}
+
+.ptsc_comparison_table.first .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #337ab7;
+}
+
+.ptsc_comparison_table.first .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #337ab7;
+}
+
+.ptsc_comparison_table.first .ptsc_tooltip {
+    background: #337ab7;
+}
+
+.ptsc_comparison_table.first .ptsc_tooltip:after {
+    border-color: transparent #337ab7 transparent transparent;
+}
+
+.ptsc_comparison_table.second .ptsc_comparison_table_section_heading {
+    background: #333;
+}
+
+.ptsc_comparison_table.second .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #00ab00;
+}
+
+.ptsc_comparison_table.second .ptsc_price_toggle input:checked.ptsc_comparison_table.second .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #333;
+}
+
+.ptsc_comparison_table.second .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #00ab00;
+}
+
+.ptsc_comparison_table.second .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #00ab00;
+}
+
+.ptsc_comparison_table.second .ptsc_tooltip {
+    background: #00ab00;
+}
+
+.ptsc_comparison_table.second .ptsc_tooltip:after {
+    border-color: transparent #00ab00 transparent transparent;
+}
+
+.ptsc_comparison_table.third .ptsc_comparison_table_section_heading {
+    background: #ff4d00;
+}
+
+.ptsc_comparison_table.third .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #ff4d00;
+}
+
+.ptsc_comparison_table.third .ptsc_price_toggle input:checked.ptsc_comparison_table.third .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #ff4d00;
+}
+
+.ptsc_comparison_table.third .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #ff4d00;
+}
+
+.ptsc_comparison_table.third .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #ff4d00;
+}
+
+.ptsc_comparison_table.third .ptsc_tooltip {
+    background: #ff4d00;
+}
+
+.ptsc_comparison_table.third .ptsc_tooltip:after {
+    border-color: transparent #ff4d00 transparent transparent;
+}
+
+.ptsc_comparison_table.fourth .ptsc_comparison_table_section_heading {
+    background: #54b4f2;
+}
+
+.ptsc_comparison_table.fourth .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #54b4f2;
+}
+
+.ptsc_comparison_table.fourth .ptsc_price_toggle input:checked.ptsc_comparison_table.fourth .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #54b4f2;
+}
+
+.ptsc_comparison_table.fourth .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #54b4f2;
+}
+
+.ptsc_comparison_table.fourth .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #54b4f2;
+}
+
+.ptsc_comparison_table.fourth .ptsc_tooltip {
+    background: #54b4f2;
+}
+
+.ptsc_comparison_table.fourth .ptsc_tooltip:after {
+    border-color: transparent #54b4f2 transparent transparent;
+}
+
+.ptsc_comparison_table.fifth .ptsc_comparison_table_section_heading {
+    background: #323232;
+}
+
+.ptsc_comparison_table.fifth .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #323232;
+}
+
+.ptsc_comparison_table.fifth .ptsc_price_toggle input:checked.ptsc_comparison_table.fifth .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #323232;
+}
+
+.ptsc_comparison_table.fifth .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #323232;
+}
+
+.ptsc_comparison_table.fifth .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #323232;
+}
+
+.ptsc_comparison_table.fifth .ptsc_tooltip {
+    background: #323232;
+}
+
+.ptsc_comparison_table.fifth .ptsc_tooltip:after {
+    border-color: transparent #323232 transparent transparent;
+}
+
+.ptsc_comparison_table.sixth .ptsc_comparison_table_section_heading {
+    background: #62b2fe;
+}
+
+.ptsc_comparison_table.sixth .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #3399fe;
+}
+
+.ptsc_comparison_table.sixth .ptsc_price_toggle input:checked.ptsc_comparison_table.sixth .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #3399fe;
+}
+
+.ptsc_comparison_table.sixth .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #3399fe;
+}
+
+.ptsc_comparison_table.sixth .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #3399fe;
+}
+
+.ptsc_comparison_table.sixth .ptsc_tooltip {
+    background: #3399fe;
+}
+
+.ptsc_comparison_table.sixth .ptsc_tooltip:after {
+    border-color: transparent #3399fe transparent transparent;
+}
+
+.ptsc_comparison_table.seventh .ptsc_comparison_table_section_heading {
+    background: #f56a05;
+}
+
+.ptsc_comparison_table.seventh .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #f56a05;
+}
+
+.ptsc_comparison_table.seventh .ptsc_price_toggle input:checked.ptsc_comparison_table.seventh .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #f56a05;
+}
+
+.ptsc_comparison_table.seventh .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #f56a05;
+}
+
+.ptsc_comparison_table.seventh .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #f56a05;
+}
+
+.ptsc_comparison_table.seventh .ptsc_tooltip {
+    background: #f56a05;
+}
+
+.ptsc_comparison_table.seventh .ptsc_tooltip:after {
+    border-color: transparent #f56a05 transparent transparent;
+}
+
+.ptsc_comparison_table.eighth {
+    background: #fff;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_section_content {
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_section_content .ptsc_pricing_table .ptsc_price {
+    display: block;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_section_summary {
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_section_summary .ptsc_pricing_table .ptsc_price {
+    display: block;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_section_heading {
+    background: #2A363F;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #86c724;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_titles_col .ptsc-arrow-box {
+    position: relative;
+    background: #5f686f;
+    padding: 12px 20px 12px 0;
+    text-align: right;
+    color: #fff;
+    margin: 0 15px 0 -15px;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_titles_col .ptsc-arrow-box:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(153, 153, 153, 0);
+    border-left-color: #5f686f;
+    border-width: 18px;
+    margin-top: -18px;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_titles_col .ptsc-arrow-box h2 {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ptsc_comparison_table.eighth .ptsc_comparison_table_titles_col .ptsc-arrow-box h4 {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ptsc_comparison_table.eighth .ptsc_price_toggle input:checked.ptsc_comparison_table.eighth .ptsc_price_toggle input + span {
+    color: #fff;
+    background: #86c724;
+}
+
+.ptsc_comparison_table.eighth .ptsc_discounts_container .ptsc_holder:not(:empty) {
+    background: #86c724;
+}
+
+.ptsc_comparison_table.eighth .ptsc_discounts_container .ptsc_holder:not(:empty):after {
+    border-top-color: #86c724;
+}
+
+.ptsc_comparison_table.eighth .ptsc_tooltip {
+    background: #86c724;
+}
+
+.ptsc_comparison_table.eighth .ptsc_tooltip:after {
+    border-color: transparent #86c724 transparent transparent;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_section_heading {
+    background: #42454a;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_section_content {
+    background: #f3f3f3;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_titles li {
+    border-color: #e6e6e6;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_values li {
+    border-color: #e6e6e6;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_values li .fa {
+    font-size: 22px;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_values li .fa.fa-check {
+    color: #fd4326;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_values li .fa.fa-close {
+    color: #42454a;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_values li:nth-child(odd) {
+    background: #f8f8f8;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: #fff;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_summary_box {
+    background: #42454a;
+}
+
+.ptsc_comparison_table.alaska .ptsc_comparison_table_summary_box .ptsc_price {
+    display: block;
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_row {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_row .ptsc_comparison_table_col {
+    border-right: 1px solid #e4e4e4;
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_row .ptsc_comparison_table_col.featured {
+    background: #fafafa;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_row .ptsc_comparison_table_title {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_row.ptsc_first_row .ptsc_comparison_table_col {
+    border: 0;
+    padding: 15px 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_pricing_table {
+    border: 0;
+    background: 0;
+    text-align: center;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_heading {
+    text-align: center;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_heading h2 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #39bce5;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-01 .whmp_text {
+    display: none;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_price {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    background: 0;
+    padding: 0;
+    color: #333;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_price * {
+    display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_price .ptsc_period {
+    display: block;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_promo-text {
+    display: none;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_button .ptsc_submit-button {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #97a1b7;
+    white-space: nowrap;
+    border: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_button .ptsc_submit-button:hover {
+    background-color: #838c9f;
+}
+
+.ptsc_comparison_table.simple-01 .featured .ptsc_button .ptsc_submit-button {
+    background-color: #646bbc;
+}
+
+.ptsc_comparison_table.simple-01 .featured .ptsc_button .ptsc_submit-button:hover {
+    background-color: #2e3353;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_feature_titles {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_feature_titles li {
+    background: 0;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_feature_titles li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_feature_values {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_feature_values li {
+    background: 0;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_feature_values li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-01 .ptsc_comparison_table_section_summary .ptsc_comparison_table_titles_col {
+    align-self: stretch;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_pricing_table {
+    border: 0;
+    background: 0;
+    text-align: center;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_first_row {
+    background: #2980b9;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_first_row .ptsc_heading {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_first_row .ptsc_heading h2 {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_first_row .ptsc_plan_description_responsive {
+    background: #fff;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content .ptsc_comparison_table_col {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles {
+    text-align: right;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles li {
+    background: 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles li:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li {
+    background: 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_price_row {
+    font-weight: 700;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_price_row .ptsc_comparison_table_titles_col {
+    text-align: right;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_price {
+    font-size: 20px;
+    line-height: 40px;
+    color: #2980b9;
+    text-align: center;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_button .ptsc_submit-button {
+    border: 0;
+    background: #2980b9;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_button .ptsc_submit-button:hover {
+    background: #20638f;
+}
+
+.ptsc_comparison_table.simple-02 .ptsc_comparison_table_section_heading {
+    color: #555;
+    background: 0 0;
+}
+
+.ptsc_comparison_table.simple-03 {
+    border-top: 3px solid #f9a13a;
+    padding-top: 0;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row {
+    color: #fff;
+    text-align: center;
+    background: #005793;
+    padding: 20px 0;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_heading h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_price {
+    color: #f9a13a;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_price .ptsc_amount {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_button .ptsc_submit-button {
+    background-color: #ffcb08;
+    border: 1px solid #815627;
+    box-shadow: 0 3px 0 #815627, 0 6px 4px -2px rgba(0, 0, 0, 0.3);
+    color: #333;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .5px;
+    padding: 8px 16px;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_button .ptsc_submit-button:hover {
+    background: #ffd43d;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_button .ptsc_submit-button:active {
+    box-shadow: none;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content .ptsc_comparison_table_col {
+    padding: 0;
+    border-right: 1px solid #adadad;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content .ptsc_comparison_table_col:first-child {
+    border-left: 1px solid #adadad;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles {
+    background: 0;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles li {
+    background: 0;
+    border-bottom: 1px solid #adadad;
+    padding: 10px;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li {
+    background: 0;
+    border-bottom: 1px solid #adadad;
+    padding: 10px;
+}
+
+.ptsc_comparison_table.simple-03 .ptsc_comparison_table_section_heading {
+    background: #005793;
+}
+
+.ptsc_comparison_table.simple-04 {
+    max-width: 100%;
+    min-width: 0;
+    border: 1px solid #adadad;
+    padding-top: 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_table_container {
+    min-width: 991px;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row {
+    text-align: center;
+    background: #e9e8e8;
+    color: #fff;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_titles_col {
+    align-self: stretch;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_titles_col h2 {
+    margin: 0 !important;
+    color: #000;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_col .ptsc_heading {
+    background: #879097;
+    padding: 15px 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_col .ptsc_heading h2 {
+    margin: 0 0 40px;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_col .ptsc_price {
+    padding: 30px 0;
+    background: #c8c9c9;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_col.featured .ptsc_heading {
+    background: green;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_heading_row .ptsc_comparison_table_col.featured .ptsc_price {
+    background: #96d3fc;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_col {
+    padding: 0;
+    border-right: 1px solid #adadad;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_col:last-child {
+    border: 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles {
+    border: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles li {
+    background: 0 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles li:nth-child(even) {
+    background: #e9e8e8;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values {
+    border: 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li {
+    background: 0 0;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_comparison_table_section_content .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: #e9e8e8;
+}
+
+.ptsc_comparison_table.simple-04 .ptsc_button .ptsc_submit-button {
+    color: #fff;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border: 0;
+    background: #79c923;
+}
+
+.ptsc_comparison_table.simple-05 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_price {
+    background: 0 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_titles li {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_titles li:nth-child(odd) {
+    background: #f8f8f8;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_titles li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_titles li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_values li {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_values li:nth-child(odd) {
+    background: #f8f8f8;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_feature_values li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_submit-button {
+    width: 100%;
+    display: block;
+    background: green;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    opacity: .8;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_submit-button:hover {
+    opacity: 1;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_col {
+    border: 1px solid #f2f2f2;
+    border-top: 0;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_col:not(:first-child) {
+    border-left: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_col:nth-child(odd) .ptsc_submit-button {
+    background: #43cb83;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_col:nth-child(even) .ptsc_submit-button {
+    background: #845a9f;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_pricing_table {
+    background: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col {
+    display: -webkit-box;
+    display: flex;
+    align-self: stretch;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 24px 15px;
+    border-top: 15px solid #ccc;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col > * {
+    width: 100%;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col:nth-child(odd) {
+    border-top-color: #43cb83;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col:nth-child(even) {
+    border-top-color: #845a9f;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col:first-child {
+    border-top-color: #ccc;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_tables h2 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-05 .ptsc_comparison_table_section_content .ptsc_comparison_table_col {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-06 {
+    padding-top: 50px;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_price {
+    background: 0 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_titles li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_titles li:nth-child(odd) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_titles li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_titles li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_values li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_values li:nth-child(odd) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_feature_values li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_submit-button {
+    border-radius: 100px;
+    border: 0;
+    padding: 10px 25px;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_col {
+    border: 1px solid #ccc;
+    border-top: 0;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_col:not(:last-child) {
+    border-right: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_col.featured {
+    background: #eff8f7;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_pricing_table {
+    background: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_pricing_table .ptsc_promo-text {
+    background: #6bc991;
+    position: absolute;
+    top: -66px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -15px;
+    left: -1px;
+    right: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col {
+    display: -webkit-box;
+    display: flex;
+    align-self: stretch;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 24px 15px;
+    border-top: 1px solid #ccc;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col > * {
+    width: 100%;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col:first-child {
+    border-top: 0;
+    border-left: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_tables h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_tables .ptsc_button {
+    display: block;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_heading {
+    background: #eff8f7;
+    border: 1px solid #ccc;
+    border-top: 0;
+    font-weight: 700;
+    color: #45545f;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-06 .ptsc_comparison_table_section_content .ptsc_comparison_table_col {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-07 {
+    padding-top: 50px;
+    color: #666c70;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_heading h2 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_price {
+    background: 0 0;
+    font-size: 17px;
+    line-height: 26px;
+    margin: 0;
+    word-spacing: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_submit-button {
+    border-radius: 100px;
+    border: 1px solid #666c70;
+    padding: 10px 25px;
+    background: 0 0;
+    color: #2990ea;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_submit-button:hover {
+    color: #1269b5;
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_titles li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_titles li:nth-child(odd) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_titles li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_titles li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_titles li .fa.ptsc_icon_yes {
+    color: #1269b5;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_values li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_values li:nth-child(odd) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_values li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    color: #1269b5;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_col {
+    border: 1px solid #ccc;
+    border-top: 0;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_col:not(:last-child) {
+    border-right: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_col.featured {
+    background: #eff8f7;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_pricing_table {
+    background: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_pricing_table .ptsc_promo-text {
+    background: #6bc991;
+    position: absolute;
+    top: -66px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -15px;
+    left: -1px;
+    right: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col {
+    display: -webkit-box;
+    display: flex;
+    align-self: stretch;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 24px 15px;
+    border-top: 1px solid #ccc;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col > * {
+    width: 100%;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col:first-child {
+    border-top: 0;
+    border-left: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_tables h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_tables .ptsc_button {
+    display: block;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_heading {
+    background: #eff8f7;
+    border: 1px solid #ccc;
+    border-top: 0;
+    font-weight: 700;
+    color: #45545f;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-07 .ptsc_comparison_table_section_content .ptsc_comparison_table_col {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-08 {
+    padding-top: 50px;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_price {
+    background: 0 0;
+    font-weight: 900;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_price .ptsc_unit {
+    vertical-align: super;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_pricing_table {
+    background: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_pricing_table .ptsc_promo-text {
+    background: #fa7921;
+    position: absolute;
+    top: -66px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -15px;
+    left: -1px;
+    right: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_submit-button {
+    border-radius: 4px;
+    border: 0;
+    padding: 5px 15px;
+    background: #1e5694;
+    font-weight: 700;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_submit-button:hover {
+    background: #1f73d0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_col {
+    border: 1px solid #ccc;
+    border-top: 0;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_col:not(:last-child) {
+    border-right: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_col.featured {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_col.featured .ptsc_submit-button {
+    background: #fa7921;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_col.featured .ptsc_submit-button:hover {
+    background: #ff9020;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_titles li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_titles li:nth-child(odd) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_titles li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_titles li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_titles li .fa.ptsc_icon_no {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: #32b17b;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    background: red;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_titles li .fa.ptsc_icon_yes {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: #32b17b;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_values li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_values li:nth-child(odd) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_values li:nth-child(even) {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_values li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_values li .fa.ptsc_icon_no {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: #32b17b;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    background: red;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_feature_values li .fa.ptsc_icon_yes {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: #32b17b;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col {
+    display: -webkit-box;
+    display: flex;
+    align-self: stretch;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 24px 15px;
+    border-top: 1px solid #ccc;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col > * {
+    width: 100%;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_tables .ptsc_comparison_table_col:first-child {
+    border-top: 0;
+    border-left: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_tables h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_tables .ptsc_button {
+    display: block;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_heading {
+    background: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    font-weight: 700;
+    color: #45545f;
+    text-transform: none;
+    font-size: 18px;
+    text-align: left;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_content {
+    background: 0;
+}
+
+.ptsc_comparison_table.simple-08 .ptsc_comparison_table_section_content .ptsc_comparison_table_col {
+    padding: 0;
+}
+
+.ptsc_comparison_table.simple-09 .ptsc_button {
+    display: block !important;
+}
+
+.ptsc_comparison_table.simple-09 .ptsc_comparison_table_section_heading {
+    background: #63b770;
+    text-align: left;
+}
+
+.ptsc_comparison_table.simple-10 .ptsc_comparison_table_row {
+    background: #f4f5f9;
+}
+
+.ptsc_table_group {
+    box-sizing: border-box;
+}
+
+.ptsc_table_group * {
+    box-sizing: border-box;
+}
+
+.ptsc_table_group:after {
+    box-sizing: border-box;
+}
+
+.ptsc_table_group:before {
+    box-sizing: border-box;
+}
+
+.ptsc_table_group .ptsc_table_group_row {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.ptsc_table_group .ptsc_table_group_col {
+    width: 30%;
+    padding: 10px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.ptsc_table_group .ptsc_table_group_col .whmpress_pricing_table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100% !important;
+}
+
+.ptsc_table_group .ptsc_table_group_col .whmpress_pricing_table .whmpress_order_button {
+    display: inline-block;
+}
+
+.ptsc_table_group .slick-dots {
+    list-style: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto 15px;
+}
+
+.ptsc_table_group .slick-dots:after {
+    content: '';
+    position: absolute;
+    background: #7ecefd;
+    height: 10px;
+    border-radius: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 97;
+    bottom: 10px;
+}
+
+.ptsc_table_group .slick-dots li {
+    position: relative;
+    cursor: pointer;
+    min-width: 70px;
+    text-align: center;
+}
+
+.ptsc_table_group .slick-dots li > span {
+    content: '';
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 5px auto;
+    background: #7ecefd;
+    border-radius: 20px;
+    z-index: 98;
+}
+
+.ptsc_table_group .slick-dots li > span:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #7ecefd;
+    border-radius: 10px;
+    left: 5px;
+    top: 5px;
+}
+
+.ptsc_table_group .slick-dots li.slick-active {
+    cursor: default;
+}
+
+.ptsc_table_group .slick-dots li.slick-active > span:after {
+    background: #fff !important;
+}
+
+.ptsc_table_group .ptsc_group_title {
+    display: none !important;
+}
+
+.ptsc_table_group .ptsc_pricing_table {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.ptsc_table_group .ptsc_pricing_table ul {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+.ptsc_table_group .ptsc_pricing_table ul li {
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+.ptsc_table_group .ptsc_pricing_table ul li:last-child {
+    border-bottom: 0;
+}
+
+.ptsc_table_group .ptsc_pricing_table h4 {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin: 0;
+    padding: 20px 0 10px;
+}
+
+.ptsc_table_group .ptsc_pricing_table .ptsc_order_combo form {
+    display: block;
+}
+
+.ptsc_table_group .ptsc_pricing_table .ptsc_order_combo form button {
+    display: block;
+    width: 90%;
+    margin: 0 auto 15px;
+}
+
+.ptsc_table_group .ptsc_pricing_table .ptsc_order_combo form select {
+    display: block;
+    width: 90%;
+    margin: 0 auto 15px;
+}
+
+.ptsc_table_group .ptsc_pricing_table .ptsc_order_button {
+    width: 90%;
+    display: inline-block;
+}
+
+.ptsc_table_group_col .slick-slide .slick-active {
+    min-width: 100px;
+}
+
+.ptsc_table_group.one_col .ptsc_table_group_col {
+    width: 100% !important;
+}
+
+.ptsc_table_group.two_cols .ptsc_table_group_col {
+    width: 50% !important;
+}
+
+.ptsc_table_group.three_cols .ptsc_table_group_col {
+    width: 33% !important;
+}
+
+.ptsc_table_group.four_cols .ptsc_table_group_col {
+    width: 25% !important;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row {
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row .ptsc_next {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    padding: 0;
+    background: 0;
+    left: 2px;
+    top: 50%;
+    margin-top: -25px;
+    color: #333;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 0;
+    outline: transparent !important;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row .ptsc_next:hover {
+    color: #333;
+    background: 0;
+    border: 0;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row .ptsc_prev {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    padding: 0;
+    background: 0;
+    left: 2px;
+    top: 50%;
+    margin-top: -25px;
+    color: #333;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 0;
+    outline: transparent !important;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row .ptsc_prev:hover {
+    color: #333;
+    background: 0;
+    border: 0;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row .ptsc_next.ptsc_next {
+    left: auto;
+    right: 0;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_row .ptsc_prev.ptsc_next {
+    left: auto;
+    right: 0;
+}
+
+.ptsc_table_group.group-01 .slick-dots:after {
+    background: #2cd26c;
+}
+
+.ptsc_table_group.group-01 .slick-dots li > span {
+    background: #2cd26c;
+}
+
+.ptsc_table_group.group-01 .slick-dots li > span:after {
+    background: #2cd26c;
+}
+
+.ptsc_table_group.group-02 .slick-dots:after {
+    background: #e84c3d;
+}
+
+.ptsc_table_group.group-02 .slick-dots li > span {
+    background: #e84c3d;
+}
+
+.ptsc_table_group.group-02 .slick-dots li > span:after {
+    background: #e84c3d;
+}
+
+.ptsc_table_group.group-03 .slick-dots:after {
+    background: #ffac00;
+}
+
+.ptsc_table_group.group-03 .slick-dots li > span {
+    background: #ffac00;
+}
+
+.ptsc_table_group.group-03 .slick-dots li > span:after {
+    background: #ffac00;
+}
+
+.ptsc_table_group.group-04 .slick-dots:after {
+    background: #7c3ac9;
+}
+
+.ptsc_table_group.group-04 .slick-dots li > span {
+    background: #7c3ac9;
+}
+
+.ptsc_table_group.group-04 .slick-dots li > span:after {
+    background: #7c3ac9;
+}
+
+.ptsc_table_group.group-05 .slick-dots:after {
+    background: #a6374a;
+}
+
+.ptsc_table_group.group-05 .slick-dots li > span {
+    background: #a6374a;
+}
+
+.ptsc_table_group.group-05 .slick-dots li > span:after {
+    background: #a6374a;
+}
+
+.ptsc_table_group.group-06 .slick-dots:after {
+    background: #7ec01e;
+}
+
+.ptsc_table_group.group-06 .slick-dots li > span {
+    background: #7ec01e;
+}
+
+.ptsc_table_group.group-06 .slick-dots li > span:after {
+    background: #7ec01e;
+}
+
+.ptsc_table_group.group-07 .slick-dots:after {
+    background: #d4300c;
+}
+
+.ptsc_table_group.group-07 .slick-dots li > span {
+    background: #d4300c;
+}
+
+.ptsc_table_group.group-07 .slick-dots li > span:after {
+    background: #d4300c;
+}
+
+.ptsc_table_group.group-08 .slick-dots:after {
+    background: #2edb7c;
+}
+
+.ptsc_table_group.group-08 .slick-dots li > span {
+    background: #2edb7c;
+}
+
+.ptsc_table_group.group-08 .slick-dots li > span:after {
+    background: #2edb7c;
+}
+
+.ptsc_table_group.group-09 .slick-dots:after {
+    background: #ff813b;
+}
+
+.ptsc_table_group.group-09 .slick-dots li > span {
+    background: #ff813b;
+}
+
+.ptsc_table_group.group-09 .slick-dots li > span:after {
+    background: #ff813b;
+}
+
+.ptsc_table_group.group-10 .slick-dots:after {
+    background: #26c3f6;
+}
+
+.ptsc_table_group.group-10 .slick-dots li > span {
+    background: #26c3f6;
+}
+
+.ptsc_table_group.group-10 .slick-dots li > span:after {
+    background: #26c3f6;
+}
+
+.ptsc_table_group.simple-01 .slick-dots:after {
+    background: #009cfc;
+}
+
+.ptsc_table_group.simple-01 .slick-dots li > span {
+    background: #009cfc;
+}
+
+.ptsc_table_group.simple-01 .slick-dots li > span:after {
+    background: #009cfc;
+}
+
+.ptsc_table_group.simple-02 .slick-dots:after {
+    background: #b43a7e;
+}
+
+.ptsc_table_group.simple-02 .slick-dots li > span {
+    background: #b43a7e;
+}
+
+.ptsc_table_group.simple-02 .slick-dots li > span:after {
+    background: #b43a7e;
+}
+
+.ptsc_table_group.simple-03 .slick-dots:after {
+    background: #242424;
+}
+
+.ptsc_table_group.simple-03 .slick-dots li > span {
+    background: #242424;
+}
+
+.ptsc_table_group.simple-03 .slick-dots li > span:after {
+    background: #242424;
+}
+
+.ptsc_hosting_slider {
+    box-sizing: border-box;
+    background: #e5e5e5;
+    margin: 50px auto 30px;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 35px 25px 20px;
+    box-shadow: inset 0 0 3px 3px #ccc;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.ptsc_hosting_slider * {
+    box-sizing: border-box;
+}
+
+.ptsc_hosting_slider:after {
+    box-sizing: border-box;
+}
+
+.ptsc_hosting_slider:before {
+    box-sizing: border-box;
+}
+
+.ptsc_hosting_slider .ptsc_package_title ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.ptsc_hosting_slider .ptsc_package_title ul li {
+    background: green;
+    text-align: center;
+    padding: 6px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    width: 10%;
+    min-width: 90px;
+    margin-bottom: 15px !important;
+}
+
+.ptsc_hosting_slider .ui-slider {
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+.ptsc_hosting_slider .ptsc_slider_content {
+    padding-bottom: 30px;
+}
+
+.ptsc_hosting_slider .ptsc_slider_submit_button {
+    text-align: center;
+}
+
+.ptsc_hosting_slider .ptsc_slider_submit_button .ptsc_submit {
+    display: inline-block;
+    background: #5cb85c;
+    border-radius: 6px;
+    padding: 6px 10px;
+    border: 1px solid #4cae4c;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.ptsc_hosting_slider .ptsc_slider_submit_button .ptsc_submit:hover {
+    background: #449d44;
+    border-color: #398439;
+}
+
+.ptsc_hosting_slider .ptsc_package_title_mobile {
+    display: none;
+}
+
+.ptsc_hosting_slider .ptsc_price_toggle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ptsc_table_group .ptsc_price_toggle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ptsc_hosting_slider .ptsc_price_toggle label span {
+    background-color: #dff0d8;
+}
+
+.ptsc_table_group .ptsc_price_toggle label span {
+    background-color: #dff0d8;
+}
+
+.ptsc_hosting_slider .ptsc_price_toggle input:checked.ptsc_hosting_slider .ptsc_price_toggle input + span {
+    background-color: green;
+    color: #fff;
+}
+
+.ptsc_table_group .ptsc_price_toggle input:checked.ptsc_table_group .ptsc_price_toggle input + span {
+    background-color: green;
+    color: #fff;
+}
+
+.ptsc_hosting_slider .ptsc_slider_discounts_container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ptsc_table_group .ptsc_slider_discounts_container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ptsc_hosting_slider .ptsc_slider_discounts_container .ptsc_holder {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ptsc_table_group .ptsc_slider_discounts_container .ptsc_holder {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider .ptsc_slider_discounts_container .ptsc_discount_text:after {
+    content: " ";
+}
+
+.ptsc_table_group .ptsc_slider_discounts_container .ptsc_discount_text:after {
+    content: " ";
+}
+
+.ptsc_hosting_slider.first .ptsc_slider_output {
+    float: left;
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    position: relative;
+}
+
+.ptsc_hosting_slider.first .ptsc_slider_output .ptsc_tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.ptsc_hosting_slider.first .ptsc_slider_output:hover .ptsc_tooltip {
+    display: block;
+}
+
+.ptsc_hosting_slider.first .ptsc_slider_heading {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ptsc_hosting_slider.second {
+    background: #e1ecf4;
+    border: 1px solid #c1dcc4;
+    box-shadow: none;
+    padding-bottom: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ptsc_hosting_slider.second .ptsc_price_toggle label span {
+    background-color: #41728e;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.second .ptsc_price_toggle label:first-child > span {
+    border-radius: 6px 0 0 6px;
+}
+
+.ptsc_hosting_slider.second .ptsc_price_toggle label:last-child > span {
+    border-radius: 0 6px 6px 0;
+}
+
+.ptsc_hosting_slider.second .ptsc_price_toggle input:checked.ptsc_hosting_slider.second .ptsc_price_toggle input + span {
+    background-color: #21526e;
+}
+
+.ptsc_hosting_slider.second .ui-slider {
+    background: #21526e;
+}
+
+.ptsc_hosting_slider.second .ui-slider .ui-widget-header {
+    background: #62A028;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content {
+    background: #41728e;
+    margin-right: -25px;
+    margin-left: -25px;
+    margin-bottom: 0;
+    padding: 0 25px;
+    border-top: 1px solid #21526e;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output {
+    float: left;
+    width: 20%;
+    min-width: 150px;
+    color: #e1ecf4;
+    padding: 20px 10px;
+    text-align: center;
+    border-right: 1px solid #21526e;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output:first-child {
+    border-left: 1px solid #21526e;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title {
+    display: block;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title .ptsc_price .ptsc_amount {
+    display: none;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title .ptsc_price .ptsc_fraction {
+    display: none;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title .ptsc_price .ptsc_unit {
+    display: none;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title .ptsc_price .ptsc_period {
+    display: block;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_detail {
+    font-weight: 700;
+    display: block;
+    font-size: 24px;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_detail .ptsc_price .ptsc_period {
+    display: none;
+}
+
+.ptsc_hosting_slider.second .ptsc_package_title ul li {
+    background: #21526e;
+    padding: 3px 6px;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_submit {
+    text-align: right;
+    margin-right: -25px;
+    margin-left: -25px;
+    padding: 25px;
+    background: #41728e;
+    border-top: 1px solid #21526e;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_submit .ptsc_submit {
+    background: #e1ecf4;
+    border: 5px solid #21526e;
+    border-radius: 0;
+    color: #21526e;
+    padding: 15px 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.second .ptsc_slider_submit .ptsc_submit:hover {
+    border-color: #e1ecf4;
+    background: #21526e;
+    color: #e1ecf4;
+}
+
+.ptsc_hosting_slider.third {
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.ptsc_hosting_slider.third .ptsc_package_title ul {
+    width: 90%;
+    display: block;
+    padding-bottom: 0;
+    position: relative;
+    min-height: 20px;
+}
+
+.ptsc_hosting_slider.third .ptsc_package_title ul li {
+    background: 0 0;
+    border-radius: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    width: 40px;
+    min-width: 40px;
+    margin-left: -20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ptsc_hosting_slider.third .ui-slider {
+    margin: 0 auto 10px;
+    background: #999;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    height: 8px;
+}
+
+.ptsc_hosting_slider.third .ui-slider .ui-widget-header {
+    background: #333;
+    border-radius: 0;
+}
+
+.ptsc_hosting_slider.third .bottom-holder {
+    border: 3px solid #333;
+    border-right: 0;
+    margin-bottom: 20px;
+}
+
+.ptsc_hosting_slider.third .bottom-holder .slider-container {
+    float: left;
+    width: calc(-80%);
+    margin: 20px auto;
+}
+
+.ptsc_hosting_slider.third .bottom-holder .ptsc_price {
+    float: right;
+    width: 180px;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.third .bottom-holder .ptsc_price .ptsc_slider_description_title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ptsc_hosting_slider.third .bottom-holder .ptsc_price .ptsc_slider_description_detail {
+    font-size: 34px;
+    background: #fff;
+    width: 100%;
+    display: block;
+    border-right: 3px solid #333;
+    color: #333;
+}
+
+.ptsc_hosting_slider.third .bottom-holder .ptsc_price .ptsc_slider_description_detail .ptsc_unit {
+    padding: 0 5px 0 15px;
+    background: #333;
+    color: #fff;
+    display: inline-block;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output {
+    float: left;
+    width: 18%;
+    max-width: 150px;
+    min-width: 120px;
+    margin-right: 2%;
+    border: 2px solid #333;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output span {
+    display: block;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output span.ptsc_slider_description_title {
+    background: #f78f8f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output:nth-child(1) .ptsc_slider_description_title {
+    background: #f78f8f;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output:nth-child(2) .ptsc_slider_description_title {
+    background: #e2b088;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output:nth-child(3) .ptsc_slider_description_title {
+    background: #3697f2;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output:nth-child(4) .ptsc_slider_description_title {
+    background: #85e02d;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output:nth-child(5) .ptsc_slider_description_title {
+    background: #f78f8f;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output:nth-child(6) .ptsc_slider_description_title {
+    background: #e2b088;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content:after {
+    display: block;
+    clear: both;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_content:before {
+    display: block;
+    clear: both;
+}
+
+.ptsc_hosting_slider.third .ptsc_submit {
+    background: #333;
+    border: 5px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.third .ptsc_submit:hover {
+    border-color: #333;
+    background: #fff;
+    color: #333;
+}
+
+.ptsc_hosting_slider.third .ptsc_slider_heading {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ptsc_hosting_slider.fourth {
+    background: #6c7a89;
+    color: #fff;
+    box-shadow: none;
+    border: 0;
+    border-radius: 6px;
+    padding: 55px 0 0;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_container {
+    padding: 0 60px;
+}
+
+.ptsc_hosting_slider.fourth .ui-slider {
+    background: #000;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    height: 17px;
+    margin: 0 0 12px;
+    padding: 0;
+    width: 100%;
+}
+
+.ptsc_hosting_slider.fourth .ui-slider .ui-slider-range {
+    background: #DE6262;
+    border-radius: 6px;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_package_title ul {
+    padding: 20px 60px;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_package_title ul li {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    background: 0;
+    width: auto;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) {
+    display: -webkit-box !important;
+    display: flex !important;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_slider_output {
+    width: 25%;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_slider_output h3 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_slider_output .ptsc_slider_description_detail {
+    font-size: 29px;
+    font-weight: 900;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_slider_submit a {
+    font-size: 17px;
+    font-weight: 900;
+    padding: 6px 15px;
+    background-color: #73ae95;
+    border-color: #4cae4c;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_plan_title_responsive {
+    display: none;
+    background: #6c7a89;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_plan_title_responsive h3 {
+    position: relative;
+    background: #72AC94;
+    text-align: center;
+    color: #fff;
+    padding: 8px 17px;
+    margin: 30px auto 0;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_plan_title_responsive h3:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(114, 172, 148, 0);
+    border-top-color: #72AC94;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.ptsc_hosting_slider.slider-05 {
+    box-shadow: none;
+    background: 0;
+}
+
+.ptsc_hosting_slider.slider-05 .ui-slider {
+    height: 20px;
+    border-radius: 20px 20px 0 0;
+    background: #6da7c5;
+}
+
+.ptsc_hosting_slider.slider-05 .ui-slider .ui-widget-header {
+    background: #68bd4e;
+    border-radius: 20px 20px 0 0;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_package_title ul li {
+    background: 0 0;
+    border: 0;
+    border-radius: 0;
+    color: #666;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_package_title ul li.active {
+    font-weight: 700;
+    color: #000;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content {
+    width: 90%;
+    background: #fff;
+    margin: -30px auto 0;
+    padding: 20px;
+    box-shadow: 0 1px 5px 1px #666;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_description_holder {
+    width: 75%;
+    float: left;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_description_holder > .ptsc_slider_output {
+    float: left;
+    width: 25%;
+    min-width: 120px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_slider_description_title {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_slider_description_detail {
+    font-size: 24px;
+    line-height: 26px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    display: block;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_slider_description_detail:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background: #68bd4e;
+    border-radius: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_price_holder {
+    width: 25%;
+    float: right;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_detail {
+    padding-top: 32px;
+    padding-bottom: 15px;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_detail:after {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_price_holder .ptsc_submit {
+    background: #4891b6;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_price_holder .ptsc_submit:hover {
+    background: #3a7491;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_toggle_discount_contianer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_toggle_discount_contianer .ptsc_price_toggle label span {
+    background-color: #4891b6;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-05 .ptsc_toggle_discount_contianer .ptsc_price_toggle input:checked.ptsc_hosting_slider.slider-05 .ptsc_toggle_discount_contianer .ptsc_price_toggle input + span {
+    background: #3a7491;
+}
+
+.ptsc_hosting_slider.slider-06 {
+    box-shadow: none;
+    max-width: 860px;
+    margin: 50px auto;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.ptsc_hosting_slider.slider-06 .ui-slider {
+    height: 18px;
+    background: #415a89;
+    border: 1px solid #38678B;
+    border-color: #314366 #5171ac #5171ac #314366;
+}
+
+.ptsc_hosting_slider.slider-06 .ui-slider .ui-widget-header {
+    background: #5377b6;
+    border: 1px solid #5377b6;
+    border-color: #7793c5 #405f96 #405f96 #7793c5;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_package_title ul li {
+    background: 0 0;
+    border: 0;
+    border-radius: 0;
+    color: #ccc;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_package_title ul li.active {
+    font-weight: 700;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder {
+    min-height: 240px;
+    position: relative;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output {
+    position: absolute;
+    width: 100px;
+    overflow: hidden;
+    height: 100px;
+    border-radius: 100px;
+    background: #24305f;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output > * {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output .ptsc_slider_description_detail {
+    font-size: 22px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output .ptsc_slider_description_title {
+    font-size: 10px;
+    margin-top: -5px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(1) {
+    left: 12%;
+    bottom: -80px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(2) {
+    left: 5%;
+    bottom: 20px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(3) {
+    left: 15%;
+    bottom: 120px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(4) {
+    left: 35%;
+    bottom: 140px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_price_holder {
+    text-align: right;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_price_holder .ptsc_price {
+    font-size: 30px;
+    line-height: 1.4;
+    margin: 10px auto 15px;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_price_holder .whmpress_order_button {
+    display: inline-block;
+    color: #fff;
+    background: #24305f;
+}
+
+.ptsc_hosting_slider.slider-06 .ptsc_price_holder .whmpress_order_button:hover {
+    color: #fff;
+    background: #324384;
+}
+
+.ptsc_hosting_slider.slider-07 {
+    background: #ececec;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_container {
+    padding-right: 180px;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_heading {
+    font-size: 30px;
+    font-weight: 400;
+    color: #3767a2;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.ptsc_hosting_slider.slider-07 .ui-slider {
+    height: 8px;
+    background: #dbdbdb;
+    border: 0;
+    margin-bottom: 0 !important;
+}
+
+.ptsc_hosting_slider.slider-07 .ui-slider .ui-widget-header {
+    background: #dbdbdb;
+    border: 0;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_package_title ul li {
+    min-width: 10px;
+    text-align: center;
+    background: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_package_title ul li > div {
+    position: relative;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_package_title ul li:not(:first-child):not(:last-child) > div:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 2px;
+    background: #666;
+    top: -14px;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_package_title ul li.active {
+    color: #000;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content {
+    position: relative;
+    padding-right: 180px;
+    background: #fff;
+    margin-bottom: 35px !important;
+    border-radius: 10px;
+    border-bottom: 3px solid #999;
+    overflow: hidden;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_output {
+    width: 20%;
+    float: left;
+    border-right: 1px solid #666;
+    padding: 15px 10px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title {
+    font-size: 15px;
+    line-height: 22px;
+    color: #999;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_detail {
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_submit .ptsc_submit {
+    background: #3767a2;
+    color: #fff;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 0;
+    font-size: 22px;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_submit .ptsc_submit:hover {
+    background: #2a4f7c;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-07 .ptsc_slider_content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_hosting_slider.slider-08 {
+    background: #fff;
+    box-shadow: 0 0 1px 1px #ddd;
+    border-radius: 6px;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_price_toggle {
+    margin-bottom: 25px;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_price_toggle .ribbon {
+    color: #fff;
+    line-height: 1.4;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px 10px 40px;
+    margin-left: -45px;
+    position: relative;
+    background: #0d8ff2;
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_price_toggle .ribbon:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -1px;
+    top: 100%;
+    border-width: 6px 10px;
+    border-style: solid;
+    border-color: #085691 #085691 transparent transparent;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_price_toggle label span {
+    background: #3da5f5;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_price_toggle input:checked.ptsc_hosting_slider.slider-08 .ptsc_price_toggle input + span {
+    background: #0a72c2;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_discounts_container {
+    padding: 10px 20px;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_container {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.ptsc_hosting_slider.slider-08 .ui-slider {
+    height: 12px;
+    background: #cbcbcb;
+    border: 0;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.ptsc_hosting_slider.slider-08 .ui-slider .ui-widget-header {
+    background: #0d8ff2;
+    border: 0;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_package_title ul li {
+    text-align: center;
+    background: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_package_title ul li.active {
+    color: #0d8ff2;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content_container .ptsc_slider_heading {
+    color: #000;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content {
+    position: relative;
+    padding-right: 180px;
+    background: #fff;
+    margin-bottom: 35px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 160px;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_slider_output {
+    width: 20%;
+    display: inline-block;
+    padding: 15px 10px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title {
+    font-size: 15px;
+    line-height: 22px;
+    color: #999;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_detail {
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_title {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_amount {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_fraction {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_unit {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_period {
+    display: block;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_detail {
+    font-size: 28px;
+    line-height: 22px;
+    color: #0d8ff2;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder .ptsc_slider_description_detail .ptsc_price .ptsc_period {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_submit {
+    background: #62b738;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 22px;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_submit:hover {
+    background: #4d902c;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-08 .ptsc_slider_content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_hosting_slider.slider-09 {
+    background: #f5f6f7;
+    background: linear-gradient(to bottom, #f5f6f7 0, #e6e6e6 100%);
+    padding: 35px 0 0;
+    box-shadow: 0 0 1px 1px #ddd;
+    border-radius: 6px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_price_toggle {
+    padding: 10px 20px;
+}
+
+.ptsc_table_group.simple-01 .ptsc_price_toggle {
+    padding: 10px 20px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_price_toggle label span {
+    background-color: #0290cd;
+    color: #fff;
+}
+
+.ptsc_table_group.simple-01 .ptsc_price_toggle label span {
+    background-color: #0290cd;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_price_toggle label:first-child > span {
+    border-radius: 6px 0 0 6px;
+}
+
+.ptsc_table_group.simple-01 .ptsc_price_toggle label:first-child > span {
+    border-radius: 6px 0 0 6px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_price_toggle label:last-child > span {
+    border-radius: 0 6px 6px 0;
+}
+
+.ptsc_table_group.simple-01 .ptsc_price_toggle label:last-child > span {
+    border-radius: 0 6px 6px 0;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_price_toggle input:checked.ptsc_hosting_slider.slider-09 .ptsc_price_toggle input + span {
+    background-color: #026d9a;
+}
+
+.ptsc_table_group.simple-01 .ptsc_price_toggle input:checked.ptsc_table_group.simple-01 .ptsc_price_toggle input + span {
+    background-color: #026d9a;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_discounts_container {
+    padding: 10px 20px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_heading {
+    font-size: 30px;
+    font-weight: 400;
+    color: #0290CD;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.ptsc_hosting_slider.slider-09 .ui-slider {
+    height: 4px;
+    background: #c1c1c1;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 0 !important;
+}
+
+.ptsc_hosting_slider.slider-09 .ui-slider .ui-widget-header {
+    background: #dbdbdb;
+    border: 0;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_package_title ul li {
+    min-width: 47px;
+    padding: 15px 0 0;
+    text-align: center;
+    background: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_package_title ul li > div {
+    position: relative;
+}
+
+.ptsc_table_group.simple-01 .ptsc_package_title ul li > div {
+    position: relative;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_package_title ul li.active {
+    color: #000;
+    font-weight: 700;
+}
+
+.ptsc_table_group.simple-01 .ptsc_package_title ul li.active {
+    color: #000;
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_container {
+    border-bottom: 1px solid #999;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content {
+    position: relative;
+    padding-right: 180px;
+    margin-bottom: 35px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output {
+    width: 20%;
+    float: left;
+    border-right: 1px solid #999;
+    padding: 15px 10px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_title {
+    font-size: 15px;
+    line-height: 22px;
+    color: #999;
+    font-weight: 400;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output .ptsc_slider_description_detail {
+    font-size: 20px;
+    color: #0290CD;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_amount {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_decimal {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_fraction {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_unit {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_title .ptsc_price .ptsc_period {
+    display: block;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_detail {
+    color: #62af01;
+    font-size: 28px;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output.ptsc_price_holder .ptsc_slider_description_detail .ptsc_price .ptsc_period {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_submit .ptsc_submit {
+    background: #0290CD;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_submit .ptsc_submit:hover {
+    background: #026d9a;
+    color: #fff;
+}
+
+.ptsc_hosting_slider.slider-09 .ptsc_slider_content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_hosting_slider.slider-10 {
+    background: #ebebeb;
+    border: 10px solid #fff;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #333;
+    margin: 50px auto 30px;
+    position: relative;
+    border: 1px solid #ebf7ff;
+    border-radius: 0;
+}
+
+.ptsc_hosting_slider.slider-10 .ui-slider {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.ptsc_hosting_slider.slider-10 .ui-slider .ui-widget-header {
+    background: #fff;
+    border-radius: 0;
+}
+
+.ptsc_hosting_slider.slider-10 .ui-slider .ui-slider-handle {
+    background: #fff;
+    border: 1px solid #ddd;
+    height: 28px;
+    width: 18px;
+    border-radius: 0;
+    top: -3px;
+    cursor: pointer;
+}
+
+.ptsc_hosting_slider.slider-10 .ui-slider .ui-slider-handle:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    left: 4px;
+    top: 9px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    top: 13px;
+}
+
+.ptsc_hosting_slider.slider-10 .ui-slider .ui-slider-handle:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    left: 4px;
+    top: 9px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.ptsc_hosting_slider.slider-10 .ui-slider .ptsc_slider_pipe {
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    background: #ddd;
+    z-index: 2;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_heading {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 30px;
+    width: calc(-290%);
+    margin: 0 auto;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_heading span {
+    display: inline-block;
+    border: 1px solid;
+    padding: 2px 24px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_package_title ul li {
+    background: 0;
+    padding: 0;
+    border-radius: 0;
+    color: #333;
+    min-width: 80px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_package_title ul li.active {
+    font-weight: 700;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_output {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_output .ptsc_slider_description_detail {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit {
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit {
+    display: inline-block;
+    color: #fff;
+    background: #fff;
+    border-radius: 0;
+    border: 2px solid #ddd;
+    padding: 12px 20px 12px 40px;
+    color: #333;
+    font-size: 20px;
+    position: relative;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 6px;
+    left: 12px;
+    top: 50%;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin-top: -7px;
+    margin-top: 1px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 6px;
+    left: 12px;
+    top: 50%;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin-top: -7px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit:hover {
+    background: #c4c4c4;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit-button {
+    display: inline-block;
+    color: #fff;
+    background: #fff;
+    border-radius: 0;
+    border: 2px solid #ddd;
+    padding: 12px 20px 12px 40px;
+    color: #333;
+    font-size: 20px;
+    position: relative;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit-button:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 6px;
+    left: 12px;
+    top: 50%;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin-top: -7px;
+    margin-top: 1px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit-button:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 6px;
+    left: 12px;
+    top: 50%;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin-top: -7px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_slider_submit .ptsc_submit-button:hover {
+    background: #c4c4c4;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_description_holder {
+    margin-bottom: 50px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_package_title_desktop .ptsc_price .ptsc_period {
+    display: none !important;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_package_title_mobile .ptsc_price .ptsc_period {
+    display: none !important;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    min-height: 85px;
+    background: #c4c4c4;
+    color: #333;
+    min-width: 200px;
+    line-height: 1.1;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount_text {
+    display: block;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount_value {
+    display: block;
+    text-align: center;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount_text.ptsc_discount_text {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount_value.ptsc_discount_text {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount_text.ptsc_discount_value {
+    font-size: 38px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount_value.ptsc_discount_value {
+    font-size: 38px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_discount {
+    display: block;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    min-height: 85px;
+    background: #c4c4c4;
+    color: #333;
+    min-width: 150px;
+    line-height: 1.1;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading .ptsc_unit {
+    font-size: 28px;
+    vertical-align: baseline;
+    top: -20px;
+    position: relative;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading .ptsc_amount {
+    font-size: 56px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading .ptsc_decimal {
+    position: absolute;
+    margin-top: 13px;
+    font-size: 24px;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading .ptsc_fraction {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+    top: .4em;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_heading sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_toggle {
+    position: absolute;
+    left: 0;
+    top: -35px;
+    text-align: center;
+    width: auto !important;
+    float: none !important;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_toggle input {
+    display: none;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_toggle input:checked.ptsc_hosting_slider.slider-10 .ptsc_price_toggle input + span {
+    background: #c4c4c4;
+}
+
+.ptsc_hosting_slider.slider-10 .ptsc_price_toggle label span {
+    background: #fff;
+    border-radius: 0;
+    border: 2px solid #ddd;
+}
+
+.ptsc_comparison_matrix {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.ptsc_comparison_matrix * {
+    box-sizing: border-box;
+}
+
+.ptsc_comparison_matrix:after {
+    box-sizing: border-box;
+}
+
+.ptsc_comparison_matrix:before {
+    box-sizing: border-box;
+}
+
+.ptsc_comparison_matrix table {
+    width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+.ptsc_comparison_matrix table td {
+    text-align: center;
+    width: 10%;
+    border: 1px solid #D9D9D9;
+    padding: 20px 8px 15px;
+    background: #f3f3f3;
+    font-weight: 400;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.ptsc_comparison_matrix table th {
+    text-align: center;
+    width: 10%;
+}
+
+.ptsc_comparison_matrix .ptsc_group_title th {
+    background: #42454a;
+    color: #fff;
+    font-size: 18px;
+    padding: 17px;
+}
+
+.ptsc_comparison_matrix .ptsc_description_titles td {
+    text-transform: uppercase;
+    background: #ccc;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.ptsc_comparison_matrix .ptsc_plan_title span {
+    display: block;
+}
+
+.ptsc_comparison_matrix .ptsc_plan_title span.ptsc_plan_title_name {
+    font-weight: 700;
+}
+
+.ptsc_comparison_matrix .ptsc_amount {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.ptsc_comparison_matrix .ptsc_unit {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.ptsc_comparison_matrix .ptsc_compare_unit {
+    font-weight: 300;
+    text-transform: lowercase;
+    display: block;
+}
+
+.ptsc_comparison_matrix .ptsc_button .ptsc_submit-button {
+    border-radius: 3px;
+    background: #fd4326;
+    padding: 0 15px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fd4326;
+    transition: all 0.5s ease-in-out;
+}
+
+.ptsc_comparison_matrix .ptsc_button .ptsc_submit-button:hover {
+    background: #fff;
+    color: #FD4326;
+}
+
+.ptsc_comparison_matrix.matrix-01 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #303030;
+}
+
+.ptsc_comparison_matrix.matrix-01 table td {
+    padding: 8px;
+    background: #fff;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_group_title th {
+    background: #e6e6e6;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 8px;
+    color: #303030;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_description_titles td {
+    background: #fff;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_plan_title {
+    text-align: left;
+    padding-left: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_plan_title span {
+    display: block;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_plan_title span.ptsc_plan_title_name {
+    font-weight: 400;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_plan_title .ptsc_ribbon_text {
+    position: absolute;
+    width: 100px;
+    height: 14px;
+    background: #da2727;
+    color: #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 10px;
+    left: -35px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_amount {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_compare_unit {
+    text-transform: none;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_button .ptsc_submit-button {
+    font-size: 14px;
+    line-height: 18px;
+    background: #fff;
+    color: #303030;
+    border-radius: 0;
+    border: 1px solid #303030;
+    padding: 4px 8px;
+    transition: all .3s linear;
+}
+
+.ptsc_comparison_matrix.matrix-01 .ptsc_button .ptsc_submit-button:hover {
+    background: #da2727;
+    color: #fff;
+    border-color: #da2727;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix table tr {
+    border-bottom: 1px solid #ddd;
+    background: #F2F2F2;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix table tr:nth-child(even) {
+    background: #fff;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix table tr td {
+    background: 0;
+    border: 0;
+    padding: 5px 10px;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix .ptsc_description_titles th {
+    background: #00ace8;
+    color: #fff;
+    font-weight: 700;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix .ptsc_button .ptsc_submit-button {
+    background: #00ace8;
+    border-radius: 0;
+    color: #fff;
+    border: 0;
+}
+
+.ptsc_comparison_matrix.webreplex_matrix .ptsc_button .ptsc_submit-button:hover {
+    background: #0086b5;
+    color: #fff;
+}
+
+.ptsc_comparison_table ul li {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.ptsc_comparison_table .ptsc_mob_heading {
+    background: #4796b3;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-weight: 500;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_form_field.ptsc_form_field_horizontal label,
+.ptsc_row.ptsc_login_form_client_area .ptsc_form_field.ptsc_form_field_horizontal input {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_form_field.ptsc_form_field_horizontal input {
+    padding-left: 45px !important;
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_form_field.ptsc_form_field_horizontal input:focus{
+    outline: black;
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_form_field.ptsc_form_field_horizontal label{
+    font-size: 16px;
+    color: #212529;
+    margin-bottom: 8px;
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_form_field.ptsc_form_field_horizontal{
+    position: relative;
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_col_6{
+    word-wrap: break-word;
+    background-color: #F1F1F1;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 48px;
+    margin: 70px 0px;
+}
+.ptsc_row.ptsc_login_form_client_area .ptsc_col_6 i {
+    width: 38px;
+    height: 36px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 36px;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border-right: 1px solid #ced4da;
+    position: absolute;
+    bottom: 6px;
+    left: 1px;
+    border-radius: 3px 0 0 3px;
+}
+
+@media only screen and (max-width: 767px) {
+    .ptsc_comparison_table.simple-02 .ptsc_first_row {
+        background: #fff;
+    }
+
+    .ptsc_comparison_table.simple-02 .ptsc_first_row .ptsc_heading {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .ptsc_comparison_table.simple-02 .ptsc_first_row .ptsc_heading h2 {
+        font-size: 14px;
+        line-height: 22px;
+        background: #2980b9;
+        color: #fff;
+        padding: 10px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .ptsc_comparison_table.simple-02 .ptsc_first_row .ptsc_plan_description_responsive {
+        background: #fff;
+    }
+
+    .ptsc_comparison_table.simple-02 .ptsc_price * {
+        font-weight: 700;
+    }
+
+    .ptsc_comparison_table.simple-03 {
+        border-top: 0;
+        padding: 0;
+    }
+
+    .ptsc_comparison_table.simple-03 .ptsc_heading_row {
+        margin: 15px auto 25px;
+        padding-top: 0;
+        background: #fff;
+    }
+
+    .ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_comparison_table_titles_col {
+        display: none;
+    }
+
+    .ptsc_comparison_table.simple-03 .ptsc_heading_row .ptsc_comparison_table_col {
+        border-top: 3px solid #f9a13a;
+        margin: 15px auto 25px;
+        padding: 25px 15px 35px;
+        background: #005793;
+    }
+
+    .ptsc_comparison_table {
+        min-width: 200px;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_section_content {
+        display: none;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_section_heading {
+        display: none;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_section_summary {
+        display: none;
+    }
+
+
+    .ptsc_comparison_table .ptsc_price_row {
+        display: none;
+    }
+
+    .ptsc_comparison_table .ptsc_plan_description_responsive {
+        display: block;
+    }
+
+    .ptsc_comparison_table.four_cols .ptsc_comparison_table_col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ptsc_comparison_table.one_col .ptsc_comparison_table_col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ptsc_comparison_table.three_cols .ptsc_comparison_table_col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ptsc_comparison_table.tow_cols .ptsc_comparison_table_col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ptsc_comparison_table.simple-06 .ptsc_comparison_table_col:not(:last-child) {
+        border-right: 1px solid #ccc;
+    }
+
+    .ptsc_comparison_table.simple-07 .ptsc_comparison_table_col:not(:last-child) {
+        border-right: 1px solid #ccc;
+    }
+
+    .ptsc_comparison_table.simple-08 .ptsc_comparison_table_col:not(:last-child) {
+        border-right: 1px solid #ccc;
+    }
+
+    .ptsc_hosting_slider.fourth .ptsc_package_title {
+        display: none;
+    }
+
+    .ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) {
+        display: block !important;
+        padding-top: 0;
+    }
+
+    .ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_slider_output {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #6C7A89;
+    }
+
+    .ptsc_hosting_slider.fourth .ptsc_slider_content:not(.ptsc_hidden) .ptsc_plan_title_responsive {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .ptsc_comparison_matrix table {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix table td {
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix table thead {
+        display: none;
+    }
+
+    .ptsc_comparison_matrix tbody {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix tbody tr {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix tbody tr td {
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix tbody td {
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix td {
+        display: block;
+        height: auto;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .ptsc_comparison_matrix td td {
+        width: 100%;
+    }
+
+    .ptsc_comparison_matrix td:not([data-title]) {
+        text-align: center;
+    }
+
+    .ptsc_comparison_matrix tr {
+        border: 1px solid #ccc;
+    }
+
+    .ptsc_comparison_matrix td[data-title] {
+        text-align: left;
+    }
+
+    .ptsc_comparison_matrix td[data-title]:before {
+        content: attr(data-title) ": ";
+        display: inline-block;
+        font-weight: 700;
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .ptsc_comparison_table .ptsc_comparison_table_feature_titles {
+        display: none !important;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_titles_col {
+        display: none !important;
+        display: none;
+    }
+
+    .ptsc_comparison_table .ptsc_comp_feature_title_responsive {
+        display: block;
+        font-weight: 700;
+    }
+
+    .ptsc_comparison_table.one_col .ptsc_comparison_table_col {
+        width: 100%;
+    }
+
+    .ptsc_comparison_table.two_cols .ptsc_comparison_table_col {
+        width: 50%;
+    }
+
+    .ptsc_comparison_table.three_cols .ptsc_comparison_table_col {
+        width: 33.33%;
+    }
+
+    .ptsc_comparison_table.four_cols .ptsc_comparison_table_col {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ptsc_comparison_table .ptsc_comparison_table_section_tables .ptsc_pricing_table {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_section_tables .ptsc_pricing_table .ptsc_button {
+        display: none;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_section_tables .ptsc_pricing_table .ptsc_features {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) {
+    .ptsc_hosting_slider .ptsc_price_toggle {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .ptsc_hosting_slider .ptsc_slider_discounts_container {
+        width: 50%;
+        float: right;
+        text-align: right;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_price_toggle {
+        width: auto;
+        float: left;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_slider_discounts_container {
+        width: auto;
+        float: left;
+    }
+}
+
+@media (max-width: 640px) {
+    .ptsc_hosting_slider .ptsc_package_title ul {
+        padding: 0;
+    }
+
+    .ptsc_hosting_slider .ptsc_package_title ul li {
+        background: 0;
+        padding: 6px 0;
+        border-radius: 0;
+        color: unset;
+        cursor: pointer;
+        width: 10%;
+        min-width: 10px;
+    }
+
+    .ptsc_hosting_slider .ptsc_package_title_mobile {
+        display: block;
+    }
+
+    .ptsc_hosting_slider .ptsc_package_title_desktop {
+        display: none;
+    }
+
+    .ptsc_hosting_slider .ptsc_discounts_container {
+        float: none;
+        max-width: 100%;
+    }
+
+    .ptsc_hosting_slider .ptsc_price_toggle {
+        float: none;
+        max-width: 100%;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content {
+        border-bottom: 0;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output {
+        border-top: 1px solid #21526e;
+        border-left: 1px solid #21526e;
+        width: 100% !important;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_package_title ul li {
+        background: 0;
+        padding: 3px 0;
+    }
+
+    .ptsc_hosting_slider.third .bottom-holder {
+        border: 3px solid #333 !important;
+    }
+
+    .ptsc_hosting_slider.third .bottom-holder .slider-container {
+        float: none;
+        width: 100%;
+        margin: 20px auto 15px;
+    }
+
+    .ptsc_hosting_slider.third .bottom-holder .ptsc_price {
+        float: none;
+        width: 100%;
+    }
+
+    .ptsc_hosting_slider.third .bottom-holder .ptsc_price .ptsc_slider_description_title {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .ptsc_hosting_slider.third .bottom-holder .ptsc_price .ptsc_slider_description_detail {
+        text-align: center;
+        border-right: 0;
+        width: 100%;
+    }
+
+    .ptsc_hosting_slider.third .bottom-holder .ptsc_price .ptsc_slider_description_detail .ptsc_unit {
+        background: #fff;
+        color: #333;
+        margin-right: -5px;
+    }
+
+    .ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 20px !important;
+    }
+
+    .ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_description_holder {
+        width: 105%;
+        float: none;
+    }
+
+    .ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_description_holder > .ptsc_slider_output {
+        float: none;
+        width: 100%;
+    }
+
+    .ptsc_hosting_slider.slider-05 .ptsc_slider_content .ptsc_price_holder {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .ptsc_hosting_slider.slider-10 .ptsc_slider_output {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .ptsc_hosting_slider.slider-10 .ptsc_slider_output .ptsc_slider_description_detail {
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 993px) {
+    .ptsc_hosting_slider.second .ptsc_slider_content {
+        border-bottom: 0;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output {
+        border-top: 1px solid #21526e;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output:nth-child(1) {
+        width: 33.33%;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output:nth-child(2) {
+        width: 33.33%;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output:nth-child(3) {
+        width: 33.33%;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output:nth-child(4) {
+        width: 50%;
+        border-left: 1px solid #21526e;
+    }
+
+    .ptsc_hosting_slider.second .ptsc_slider_content .ptsc_slider_output:nth-child(5) {
+        width: 50%;
+    }
+}
+
+@media (max-width: 769px) {
+    .ptsc_hosting_slider.third .ptsc_slider_content .ptsc_slider_output {
+        max-width: 23%;
+        width: 23%;
+        margin: 1%;
+    }
+
+    .ptsc_comparison_table.three_cols .ptsc_comparison_table_col {
+        width: 100%;
+    }
+
+    .ptsc_comparison_table.simple-02 ul {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .ptsc_hosting_slider.slider-06 .ptsc_description_holder {
+        min-height: 480px;
+    }
+
+    .ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output {
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    .ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(1) {
+        left: 50%;
+        bottom: 0;
+    }
+
+    .ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(2) {
+        left: 50%;
+        bottom: 120px;
+    }
+
+    .ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(3) {
+        left: 50%;
+        bottom: 240px;
+    }
+
+    .ptsc_hosting_slider.slider-06 .ptsc_description_holder > .ptsc_slider_output:nth-child(4) {
+        left: 50%;
+        bottom: 360px;
+    }
+
+    .ptsc_hosting_slider.slider-06 .ptsc_price_holder {
+        text-align: center;
+    }
+
+    .ptsc_hosting_slider.slider-07 .ptsc_slider_content {
+        padding-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_output {
+        width: 100%;
+        float: none;
+        border-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-07 .ptsc_slider_content .ptsc_slider_submit {
+        position: relative;
+        width: 100%;
+        height: 80px;
+    }
+
+    .ptsc_hosting_slider.slider-07 .ptsc_slider_container {
+        padding-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_slider_content {
+        padding-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_slider_output {
+        width: 100%;
+        float: none;
+        border-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_slider_content .ptsc_price_holder {
+        position: relative;
+        width: 100%;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_slider_container {
+        padding-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-08 .ptsc_price_toggle {
+        text-align: left;
+    }
+
+    .ptsc_hosting_slider.slider-09 {
+        padding-bottom: 25px;
+    }
+
+    .ptsc_hosting_slider.slider-09 .ptsc_slider_content {
+        padding-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_output {
+        width: 100%;
+        float: none;
+        border-right: 0;
+    }
+
+    .ptsc_hosting_slider.slider-09 .ptsc_slider_content .ptsc_slider_submit {
+        position: relative;
+        width: 100%;
+        height: 80px;
+    }
+
+    .ptsc_hosting_slider.slider-09 .ptsc_slider_container {
+        padding-right: 0;
+    }
+
+    .ptsc_comparison_matrix.matrix-01 .ptsc_plan_title {
+        text-align: center;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ptsc_hosting_slider.slider-10 {
+        padding-top: 105px;
+    }
+
+    .ptsc_hosting_slider.slider-10 .ptsc_slider_heading {
+        width: 100%;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_col {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .ptsc_hosting_slider.slider-10 .ptsc_discounts_container {
+        width: 50%;
+    }
+
+    .ptsc_hosting_slider.slider-10 .ptsc_discounts_container .ptsc_price {
+        text-align: center;
+    }
+
+    .ptsc_hosting_slider.slider-10 .ptsc_price_heading {
+        width: 50%;
+    }
+
+    .ptsc_hosting_slider.slider-10 .ptsc_price_heading .ptsc_price {
+        text-align: center;
+    }
+}
+
+.ptsc_main {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.4;
+}
+
+.ptsc_main,
+.ptsc_main *,
+.ptsc_main:after,
+.ptsc_main:before,
+.ptsc_main *:after,
+.ptsc_main *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ptsc_main h1,
+.ptsc_main h2,
+.ptsc_main h3,
+.ptsc_main h4,
+.ptsc_main h5,
+.ptsc_main h6 {
+    font-weight: 700;
+}
+
+/**===============================================**/
+/**==       Form Elements                       ==**/
+/**===============================================**/
+.ptsc_form_field {
+    margin-bottom: 15px;
+    padding: 5px 0px;
+}
+
+.ptsc_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+.ptsc_form_field select,
+.ptsc_form_field textarea {
+    border: 1px solid #CCCCCC;
+    outline-color: transparent !important;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 12px;
+    font-size: 16px;
+    width: 100%;
+    background: white;
+    margin: 0;
+    color: #333333;
+}
+
+.ptsc_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):focus,
+.ptsc_form_field select:focus,
+.ptsc_form_field textarea:focus {
+    border-color: #333333;
+    color: #333333;
+}
+
+.ptsc_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not(textarea),
+.ptsc_form_field select:not(textarea),
+.ptsc_form_field textarea:not(textarea) {
+    height: 38px;
+    width: 70px;
+}
+
+.ptsc_form_field label.ptsc_radio {
+    padding-left: 30px !important;
+    position: relative;
+    cursor: pointer;
+}
+
+.ptsc_form_field label.ptsc_radio input[type="radio"] {
+    /*opacity: 0;*/
+    border: 2px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+}
+
+.ptsc_form_field label.ptsc_radio:before {
+    content: '';
+    border: 2px solid #959595;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "ptsc", serif;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    background: white;
+}
+
+.ptsc_form_field label.ptsc_radio:hover:before {
+    border-color: #337ab7;
+}
+
+.ptsc_form_field label.ptsc_radio.ptsc_checked:before {
+    content: "\f00c";
+    border-color: #337ab7;
+    background: #337ab7;
+    font-family: FontAwesome;
+}
+
+.ptsc_form_field label.ptsc_checkbox {
+    padding-left: 30px !important;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.ptsc_form_field label.ptsc_checkbox input[type="checkbox"] {
+    opacity: 0;
+    border: 2px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+}
+
+.ptsc_form_field label.ptsc_checkbox:before {
+    content: '';
+    border: 2px solid #959595;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "ptsc", serif;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: center;
+    color: white;
+    background: white;
+}
+
+.ptsc_form_field label.ptsc_checkbox:hover:before {
+    border-color: #337ab7;
+}
+
+.ptsc_form_field label.ptsc_checkbox.ptsc_checked:before {
+    content: '\e80a';
+    border-color: #337ab7;
+    background: #337ab7;
+}
+
+.ptsc_form_field > label {
+    font-weight: normal;
+    padding: 6px 0;
+    display: block;
+    cursor: pointer;
+}
+
+.ptsc_form_field:before,
+.ptsc_form_field:after {
+    display: block;
+    content: '';
+    width: 100%;
+    clear: both;
+}
+
+.ptsc_form_field > .ptsc_radio_container span,
+.ptsc_form_field > .ptsc_checkbox_container span,
+.ptsc_form_field > .ptsc_radio_container label,
+.ptsc_form_field > .ptsc_checkbox_container label {
+    font-size: 16px;
+    padding: 6px;
+    display: inline-block;
+}
+
+.ptsc_form_field input[type="number"].ptsc_plus_minus {
+    border: 1px solid #CCCCCC;
+    outline-color: transparent !important;
+    padding: 6px 12px;
+    font-size: 16px;
+    width: 70px !important;
+    text-align: center;
+    float: left;
+    margin: 0 5px;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.ptsc_form_field input[type="number"].ptsc_plus_minus::-webkit-inner-spin-button,
+.ptsc_form_field input[type="number"].ptsc_plus_minus::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ptsc_form_field .ptsc_plus,
+.ptsc_form_field .ptsc_minus {
+    border: 1px solid #CCCCCC;
+    outline-color: transparent !important;
+    padding: 6px 0;
+    font-size: 18px;
+    line-height: 22px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ptsc_form_field.has-success input[type="password"] {
+    border-color: #5cb85c !important;
+}
+
+.ptsc_form_field.has-warning input[type="password"] {
+    border-color: #f0ad4e !important;
+}
+
+.ptsc_form_field.has-error input[type="password"] {
+    border-color: #d9534f !important;
+}
+
+.ptsc_form_field #passwordStrengthBar {
+    background: #CCCCCC;
+    height: 10px;
+    display: block;
+    width: 100%;
+}
+
+.ptsc_form_field #passwordStrengthBar .progress-bar {
+    height: 10px;
+    background: #d9534f;
+}
+
+.ptsc_form_field #passwordStrengthBar .progress-bar.progress-bar-success {
+    background: #5cb85c;
+}
+
+.ptsc_form_field #passwordStrengthBar .progress-bar.progress-bar-warning {
+    background: #f0ad4e;
+}
+
+.ptsc_form_field #passwordStrengthBar .progress-bar.progress-bar-danger {
+    background: #d9534f;
+}
+
+@media (min-width: 768px) {
+    .ptsc_form_field.ptsc_form_field_horizontal > label {
+        float: left;
+        width: 25%;
+    }
+
+    .ptsc_form_field.ptsc_form_field_horizontal > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+    .ptsc_form_field.ptsc_form_field_horizontal > select,
+    .ptsc_form_field.ptsc_form_field_horizontal > textarea,
+    .ptsc_form_field.ptsc_form_field_horizontal > .ptsc_radio_container,
+    .ptsc_form_field.ptsc_form_field_horizontal > .ptsc_checkbox_container {
+        float: left;
+        width: 75%;
+    }
+
+    .ptsc_form_field.ptsc_form_field_horizontal > .ptsc_form_field_small_text_right {
+        float: right;
+    }
+
+    .ptsc_form_field.ptsc_form_field_horizontal > label small {
+        float: right;
+        margin-right: 3%;
+    }
+
+    .ptsc_form_field.ptsc_form_field_horizontal > .select_me {
+        width: 80% !important;
+    }
+
+    .ptsc_form_field.ptsc_form_button {
+        float: right;
+    }
+
+    .ptsc_comparison_table.six_cols,
+    .ptsc_comparison_table.seven_cols,
+    .ptsc_comparison_table.eight_cols,
+    .ptsc_comparison_table.nine_cols,
+    .ptsc_comparison_table.ten_cols,
+    .ptsc_comparison_table.eleven_cols {
+        width: 3000px;
+    }
+}
+
+.ptsc_form_field.ptsc_form_field_horizontal.ptsc_form_field_small_text_right_last_section {
+    float: right;
+    margin-top: -19px;
+}
+
+.ptsc_form_field.ptsc_form_field_horizontal.ptsc_form_field_small_text_right_last_section.Ptsc_last_section_table {
+    margin-top: -10%;
+}
+
+.ptsc_text_2x {
+    font-size: 32px !important;
+}
+
+.ptsc_text_center {
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.ptsc_tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 340px;
+}
+
+.ptsc_tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.ptsc_tabcontent {
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Login {
+    background-color: lightblue;
+}
+
+#Signup {
+    background-color: lightblue;
+}
+
+#Guest {
+    background-color: lightblue;
+}
+
+.ptsc_bg_warning {
+    background-color: #f0ad4e;
+}
+
+
+/**===============================================**/
+/**==       Grid                                ==**/
+/**===============================================**/
+.ptsc_row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.ptsc_row * {
+    box-sizing: border-box;
+}
+
+.ptsc_row:before,
+.ptsc_row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.ptsc_row > [class*="ptsc_col"] {
+    padding: 0 10px;
+    min-height: 16px;
+    float: left;
+    width: 100%;
+}
+
+.ptsc_row .ptsc_col_1,
+.ptsc_row .ptsc_col_xs_1 {
+    width: 8.33333333%;
+}
+
+.ptsc_row .ptsc_col_2,
+.ptsc_row .ptsc_col_xs_2 {
+    width: 16.66666667%;
+}
+
+.ptsc_row .ptsc_col_3,
+.ptsc_row .ptsc_col_xs_3 {
+    width: 25%;
+}
+
+.ptsc_row .ptsc_col_4,
+.ptsc_row .ptsc_col_xs_4 {
+    width: 33.33333333%;
+}
+
+.ptsc_row .ptsc_col_5,
+.ptsc_row .ptsc_col_xs_5 {
+    width: 41.66666667%;
+}
+
+.ptsc_row .ptsc_col_6,
+.ptsc_row .ptsc_col_xs_6 {
+    width: 50%;
+}
+
+.ptsc_row .ptsc_col_7,
+.ptsc_row .ptsc_col_xs_7 {
+    width: 58.33333333%;
+}
+
+.ptsc_row .ptsc_col_8,
+.ptsc_row .ptsc_col_xs_8 {
+    width: 66.66666667%;
+}
+
+.ptsc_row .ptsc_col_9,
+.ptsc_row .ptsc_col_xs_9 {
+    width: 75%;
+}
+
+.ptsc_row .ptsc_col_10,
+.ptsc_row .ptsc_col_xs_10 {
+    width: 83.33333333%;
+}
+
+.ptsc_row .ptsc_col_11,
+.ptsc_row .ptsc_col_xs_11 {
+    width: 91.66666667%;
+}
+
+.ptsc_row .ptsc_col_12,
+.ptsc_row .ptsc_col_xs_12 {
+    width: 100%;
+}
+
+
+#ptsc_primary_nav_wrap {
+    margin: 15px 0;
+    display: block !important;
+    background: #0E5077;
+    color: white;
+    font-weight: normal;
+    overflow: visible !important;
+    padding: 0 !important;
+}
+
+#ptsc_primary_nav_wrap:after {
+    clear: both;
+    content: ' ';
+    width: 100%;
+    display: block;
+}
+
+#ptsc_primary_nav_wrap ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#ptsc_primary_nav_wrap ul li {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#ptsc_primary_nav_wrap ul li.separator {
+    height: 1px;
+    background-color: #ddd;
+}
+
+#ptsc_primary_nav_wrap ul li.current-menu-item {
+    background: #043D5F;
+}
+
+#ptsc_primary_nav_wrap ul li.current-menu-item > a {
+    color: white !important;
+}
+
+#ptsc_primary_nav_wrap ul li:hover {
+    background: #043D5F;
+}
+
+#ptsc_primary_nav_wrap ul li:hover > ul {
+    display: block;
+    z-index: 999;
+}
+
+#ptsc_primary_nav_wrap ul li:hover > a {
+    color: white !important;
+}
+
+#ptsc_primary_nav_wrap ul a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 5px 15px;
+    color: white;
+}
+
+#ptsc_primary_nav_wrap ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #043D5F;
+    padding: 0;
+}
+
+#ptsc_primary_nav_wrap ul ul li {
+    float: none;
+    width: 200px;
+}
+
+#ptsc_primary_nav_wrap ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+    color: #333;
+}
+
+#ptsc_primary_nav_wrap ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+#ptsc_primary_nav_wrap ul.ptsc_navbar_right > li > ul {
+    left: auto;
+    right: 0;
+}
+
+.ptsc_services .ptsc_services_header {
+    text-align: right;
+    margin-bottom: 15px !important;
+}
+
+.ptsc_services .ptsc_services_header input[type="text"],
+.ptsc_services .ptsc_services_header label {
+    margin-left: 15px;
+}
+
+.ptsc_services .ptsc_service_box {
+    padding: 15px;
+    border-right: 1px solid #e6e6e6;
+    background: #F6F6F6;
+    margin-bottom: 15px !important;
+    position: relative;
+}
+
+.ptsc_services .ptsc_service_box .ptsc_service_box_qty {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.ptsc_services .ptsc_service_box i.ptsc_service_icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 50px;
+    line-height: 40px;
+    color: lightgray;
+    width: auto;
+    height: auto;
+}
+
+.ptsc_services .ptsc_services_boxes > div:nth-child(1) .ptsc_service_box .ptsc_service_box_title {
+    border-bottom: 2px solid #5bc0de;
+}
+
+.ptsc_services .ptsc_services_boxes > div:nth-child(2) .ptsc_service_box .ptsc_service_box_title {
+    border-bottom: 2px solid #5cb85c;
+}
+
+.ptsc_services .ptsc_services_boxes > div:nth-child(3) .ptsc_service_box .ptsc_service_box_title {
+    border-bottom: 2px solid #d9534f;
+}
+
+.ptsc_services .ptsc_services_boxes > div:nth-child(4) .ptsc_service_box .ptsc_service_box_title {
+    border-bottom: 2px solid #f0ad4e;
+}
+
+.ptsc-service-box {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.ptsc-service-box .ptsc-service-text {
+    padding: 30px 15px;
+    background: #EFEFEF;
+    border-radius: 19px;
+}
+
+.ptsc-service-box .ptsc-service-icon {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background: #333;
+    color: white;
+    margin: 0 auto 35px;
+    font-size: 60px;
+    border-radius: 100px;
+}
+
+.ptsc-service-box .ptsc-service-status-text {
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.ptsc_page_heading {
+    color: #337ab7;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 6px 0;
+    border-bottom: 1px solid #959595;
+    font-weight: 100;
+}
+
+/*===================================
+      services client list style
+=====================================*/
+.Ptsc_services_table_client,
+.Ptsc_services_table_client tr th,
+.Ptsc_services_table_client tr td {
+    border: none;
+}
+
+.Ptsc_services_table_client tr th {
+    border-bottom: 4px solid #a2d27a;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Ptsc_services_table_client tr td {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.Ptsc_services_table_client tr td:first-child {
+    text-align: left;
+}
+
+.Ptsc_services_table_client tr:nth-child(even) {
+    background: #f8fcfd;
+}
+
+.Ptsc_services_table_client tr th:nth-child(even) {
+    border-bottom: 4px solid #7bc144;
+}
+
+.ptsc_loader {
+    background-image: url('../images/loading/loading.gif');
+    background-repeat: no-repeat;
+    padding: 137px;
+    background-position: center;
+    background-size: 7%;
+}
+
+/* ========= cart One page css ====== */
+.ptsc_main.ptsc_sp_main .ptsc_sp_section_heading {
+    max-width: 1100px;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid #d9dadc;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sp_section {
+    margin-bottom: 40px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sp_section_content {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_form_field {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_form_field > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), .ptsc_main.ptsc_sp_main .ptsc_form_field select, .ptsc_main.ptsc_sp_main .ptsc_form_field textarea, .ptsc_main.ptsc_sp_main .ptsc_form_field .ptsc_plus, .ptsc_main.ptsc_sp_main .ptsc_form_field .ptsc_minus {
+    height: 52px;
+    min-width: 40px;
+    border: 1px solid #cccccc;
+    outline-color: transparent !important;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 12px;
+    font-size: 16px;
+    width: 100%;
+    background: white;
+    margin: 0;
+    color: #333333;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sub_heading_style_1 {
+    height: 0;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ptsc_sub_heading_style_1 > span {
+    display: inline-block;
+    position: relative;
+    padding: 0 17px;
+    top: -11px;
+    font-size: 16px;
+    color: #337ab7;
+    background-color: #fff;
+}
+
+.ptsc_main.ptsc_sp_main {
+    background: #eee;
+    padding-bottom: 40px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sp_section_heading > i {
+    padding-right: 10px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_icon_www:before {
+    content: '\e807';
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sp_order_summary {
+    background: white;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sp_order_summary .ptsc_list_bordered li {
+    border: 1px solid #c1c1c1;
+    list-style: none;
+    padding: 10px 15px;
+
+}
+
+.ptsc_main.ptsc_sp_main ul.ptsc_list.ptsc_list_padded.ptsc_list_bordered {
+    margin: 0;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_sp_order_summary .ptsc_sp_summary_totals {
+    margin: -1px 0 15px;
+    border: 1px solid #c1c1c1;
+    padding: 15px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_bordered_bottom {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_margin_bottom_5 {
+    margin-bottom: 5px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_margin_bottom_30 {
+    margin-bottom: 30px !important;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_pull_left {
+    float: left;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_pull_right, .ptsc_main.ptsc_sp_main .whcom_pull_right_xs {
+    float: right;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_clearfix, .ptsc_clearfix:before, .ptsc_main.ptsc_sp_main .ptsc_clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_text_2x {
+    font-size: 32px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_text_right, .ptsc_text_right_xs {
+    text-align: right;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_tabs_container .ptsc_tabs_content.active {
+    display: block;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_tabs_container .ptsc_tabs_content {
+    padding: 15px;
+    display: none;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_tabs_container.ptsc_tabs_fancy_2 ul.ptsc_tab_links {
+    border-bottom: 2px solid #337ab7;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_tabs_container.ptsc_tabs_fancy_2 ul.ptsc_tab_links li {
+    border: 2px solid #337ab7;
+    background: #337ab7;
+    color: white;
+    margin: 0 10px -2px;
+    padding: 12px 18px;
+    vertical-align: bottom;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_tabs_container.ptsc_tabs_fancy_2 ul.ptsc_tab_links li.active {
+    margin-top: 0;
+    padding: 18px;
+    color: #337ab7 !important;
+    background: #eeeeee;
+    border-bottom-color: #eeeeee;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_tabs_container .ptsc_tabs_content.active {
+    display: block;
+    border: none;
+    box-shadow: none;
+}
+
+.ptsc_main.ptsc_sp_main .ptsc_login_form {
+    max-width: 640px !important;
+}
+
+.ptsc_comparison_table .ptsc_comparison_table_row.ptsc_comparison_table_section_content .ptsc_comparison_table_feature_titles li.ptsc_has_tooltip {
+    padding-left: 25px;
+}
+
+/*===============================
+     single piceing toggle
+  ===============================*/
+.ptsc.ptsc_pricing_table {
+    margin-top: 62px;
+    position: inherit;
+}
+
+.ptsc_table_group .ptsc.ptsc_pricing_table {
+    margin-top: 0;
+}
+
+.ptsc_table_group .ptsc_price_toggle div#heading_slider,
+.ptsc.ptsc_pricing_table .ptsc_price_toggle div#heading_slider {
+    margin-bottom: 30px;
+}
+
+.ptsc.ptsc_pricing_table .ptsc_price_toggle .holder {
+    position: absolute;
+    top: 0;
+    width: auto;
+    left: 9%;
+    right: 9%;
+}
+
+.ptsc_table_group .holder .ptsc_radio_toggle,
+.ptsc.ptsc_pricing_table .holder .ptsc_radio_toggle {
+    border-radius: 99em;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    width: fit-content;
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 0px;
+}
+
+.ptsc_table_group .holder .ptsc_radio_toggle label span,
+.ptsc.ptsc_pricing_table .holder .ptsc_radio_toggle label span {
+    padding: 14px 10px;
+    border-radius: 39px !important;
+    background: transparent;
+    width: 146px;
+    border: none;
+    margin: 0;
+    color: #333;
+}
+
+.ptsc_table_group .holder .ptsc_radio_toggle label input[type=radio]:checked + span,
+.ptsc.ptsc_pricing_table .holder .ptsc_radio_toggle label input[type=radio]:checked + span {
+    box-shadow: none;
+    color: #fff;
+    background: #ef663c;
+    font-weight: 600;
+}
+
+.ptsc_table_group .ptsc_radio_toggle label span:before,
+.ptsc.ptsc_pricing_table .ptsc_radio_toggle label span:before {
+    display: none;
+}
+
+/*===============================
+     single comparison toggle
+  ===============================*/
+
+.ptsc_toggle_top_comparison.ptsc_comparison_table_titles_col.ptsc_comparison_table_titles_col_top {
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.ptsc_toggle_top_comparison .ptsc_radio_toggle {
+    border-radius: 99em;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    width: fit-content;
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 0px;
+}
+
+.ptsc_toggle_top_comparison .ptsc_radio_toggle label span {
+    padding: 14px 10px;
+    border-radius: 39px;
+    background: transparent;
+    width: 146px;
+    border: none;
+    margin: 0;
+}
+
+.ptsc_toggle_top_comparison .ptsc_radio_toggle label input[type=radio]:checked + span {
+    box-shadow: none;
+    color: #fff;
+    background: #ef663c;
+    font-weight: 600;
+}
+
+.ptsc_toggle_top_comparison .ptsc_radio_toggle label span:before {
+    display: none;
+}
+
+.ptsc_toggle_top_comparison ul.ptsc_packages_list,
+.ptsc.ptsc_pricing_table ul.ptsc_packages_list,
+.ptsc_table_group ul.ptsc_packages_list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: none;
+}
+
+.ptsc_toggle_top_comparison li.ptsc_package_title,
+.ptsc.ptsc_pricing_table li.ptsc_package_title,
+.ptsc_table_group li.ptsc_package_title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    background: 0;
+    width: auto;
+    padding: 0;
+}
+
+.ptsc_toggle_top_comparison .ui-slider .ui-slider-handle,
+.ptsc.ptsc_pricing_table .ui-slider .ui-slider-handle,
+.ptsc_table_group .ui-slider .ui-slider-handle {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    top: -11px;
+}
+
+.ptsc_toggle_top_comparison .ui-slider .ui-slider-range,
+.ptsc.ptsc_pricing_table .ui-slider .ui-slider-range,
+.ptsc_table_group .ui-slider .ui-slider-range {
+    background-color: #2CD26C;
+}
+
+.ptsc_toggle_top_comparison .ui-slider .ui-slider-handle:before,
+.ptsc.ptsc_pricing_table .ui-slider .ui-slider-handle:before,
+.ptsc_table_group .ui-slider .ui-slider-handle:before {
+    content: "";
+    background: lightgray;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 100%;
+    left: 6px;
+    top: 6px;
+}
+
+.ptsc_toggle_top_comparison div#heading_slider,
+.ptsc.ptsc_pricing_table div#heading_slider,
+.ptsc_table_group div#heading_slider {
+    width: 70%;
+    padding: 22px 33px;
+    border: 1px solid #cccbcb;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ptsc_toggle_top_comparison div#heading_slider .ptsc_slider_heading,
+.ptsc.ptsc_pricing_table div#heading_slider .ptsc_slider_heading,
+.ptsc_table_group div#heading_slider .ptsc_slider_heading {
+    font-size: 25px;
+    text-transform: capitalize;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ptsc_toggle_top_comparison div#head_text,
+.ptsc.ptsc_pricing_table div#head_text,
+.ptsc_table_group div#head_text {
+    border-bottom: 2px solid #2cd26c;
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.ptsc_toggle_top_comparison div#head_text:after,
+.ptsc.ptsc_pricing_table div#head_text:after,
+.ptsc_table_group div#head_text:after {
+    content: "";
+    position: absolute;
+    width: 44%;
+    border-bottom: 6px solid #2cd26c;
+    left: 85px;
+    bottom: -4px;
+}
+
+.ptsc_toggle_top_comparison div#head_text h3,
+.ptsc.ptsc_pricing_table div#head_text h3,
+.ptsc_table_group div#head_text h3 {
+    margin-bottom: 10px;
+}
+
+.ptsc_table_group.ptsc_have_carousel .ptsc_table_group_col {
+    width: 100% !important;
+}
+
+.ptsc_pri_billing_wise_discount_string,
+.ptsc_month_wise_discount_string,
+.ptsc_table_group .ptsc.ptsc_pricing_table .ptsc_pri_billing_wise_discount_string,
+.ptsc_table_group .ptsc.ptsc_pricing_table .ptsc_month_wise_discount_string {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.ptsc_discount_applied_string,
+.ptsc_table_group .ptsc.ptsc_pricing_table .ptsc_discount_applied_string {
+    color: #43ab3c;
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+.ptsc_secondary_discount_string,
+.ptsc_table_group .ptsc.ptsc_pricing_table .ptsc_secondary_discount_string {
+    font-size: 14px;
+    color: #6b757b;
+    font-weight: 400;
+}
+
+span.ptsc_discount_del_price,
+.ptsc_table_group .ptsc.ptsc_pricing_table span.ptsc_discount_del_price {
+    font-size: 14px;
+    color: #6b757b;
+    padding: 0 5px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+span.ptsc_discount_section_larger_price,
+.ptsc_table_group .ptsc.ptsc_pricing_table span.ptsc_discount_section_larger_price {
+    font-size: 14px;
+    color: #6b757b;
+    font-weight: 600;
+}
+
+strong.ptsc_saving_string,
+.ptsc_table_group .ptsc.ptsc_pricing_table strong.ptsc_saving_string {
+    padding-right: 5px;
+}
+
+.ptsc_table_group .pricing_table_price.ptsc_price_table .duration {
+    font-size: 16px;
+}
+
+.ptsc_table_group .ptsc.ptsc_pricing_table .ptsc_secondary_discount_string.ptsc_string_extra_discount {
+    line-height: 0px;
+    padding-top: 7px;
+}
+
+.discount_style_2 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .ptsc_main.ptsc_sp_main .ptsc_form_field.ptsc_form_field_horizontal > label {
+        float: left;
+        width: 35%;
+    }
+
+    .ptsc_main.ptsc_sp_main .ptsc_form_field.ptsc_form_field_horizontal > input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+        float: left;
+        width: 65% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .ptsc_main.ptsc_sp_main .ptsc_pull_left_sm {
+        float: left;
+    }
+
+    .ptsc_main.ptsc_sp_main .ptsc_pull_right_sm {
+        float: right;
+    }
+}
+
+@media (min-width: 576px) {
+    .ptsc_row .ptsc_col_sm_1 {
+        width: 8.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_sm_2 {
+        width: 16.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_sm_3 {
+        width: 25%;
+    }
+
+    .ptsc_row .ptsc_col_sm_4 {
+        width: 33.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_sm_5 {
+        width: 41.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_sm_6 {
+        width: 50%;
+    }
+
+    .ptsc_row .ptsc_col_sm_7 {
+        width: 58.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_sm_8 {
+        width: 66.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_sm_9 {
+        width: 75%;
+    }
+
+    .ptsc_row .ptsc_col_sm_10 {
+        width: 83.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_sm_11 {
+        width: 91.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_sm_12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .ptsc_row .ptsc_col_md_1 {
+        width: 8.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_md_2 {
+        width: 16.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_md_3 {
+        width: 25%;
+    }
+
+    .ptsc_row .ptsc_col_md_4 {
+        width: 33.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_md_5 {
+        width: 41.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_md_6 {
+        width: 50%;
+    }
+
+    .ptsc_row .ptsc_col_md_7 {
+        width: 58.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_md_8 {
+        width: 66.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_md_9 {
+        width: 75%;
+    }
+
+    .ptsc_row .ptsc_col_md_10 {
+        width: 83.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_md_11 {
+        width: 91.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_md_12 {
+        width: 100%;
+    }
+
+    #ptsc_primary_nav_wrap ul li {
+        float: left;
+    }
+
+    #ptsc_primary_nav_wrap ul.ptsc_navbar_left {
+        float: left;
+    }
+
+    #ptsc_primary_nav_wrap ul.ptsc_navbar_right {
+        float: right;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .ptsc_row .ptsc_col_lg_1 {
+        width: 8.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_lg_2 {
+        width: 16.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_lg_3 {
+        width: 25%;
+    }
+
+    .ptsc_row .ptsc_col_lg_4 {
+        width: 33.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_lg_5 {
+        width: 41.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_lg_6 {
+        width: 50%;
+    }
+
+    .ptsc_row .ptsc_col_lg_7 {
+        width: 58.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_lg_8 {
+        width: 66.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_lg_9 {
+        width: 75%;
+    }
+
+    .ptsc_row .ptsc_col_lg_10 {
+        width: 83.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_lg_11 {
+        width: 91.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_lg_12 {
+        width: 100%;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_feature_values li .fa,
+    .ptsc_comparison_table span.ptsc_comparison_aling_center {
+        position: absolute;
+        top: 50%;
+        line-height: 4px;
+        left: 0;
+        right: 0;
+    }
+
+    .ptsc_comparison_table .ptsc_comparison_table_feature_values li.ptsc_has_tooltip:before {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ptsc_row .ptsc_col_xl_1 {
+        width: 8.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_xl_2 {
+        width: 16.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_xl_3 {
+        width: 25%;
+    }
+
+    .ptsc_row .ptsc_col_xl_4 {
+        width: 33.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_xl_5 {
+        width: 41.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_xl_6 {
+        width: 50%;
+    }
+
+    .ptsc_row .ptsc_col_xl_7 {
+        width: 58.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_xl_8 {
+        width: 66.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_xl_9 {
+        width: 75%;
+    }
+
+    .ptsc_row .ptsc_col_xl_10 {
+        width: 83.33333333%;
+    }
+
+    .ptsc_row .ptsc_col_xl_11 {
+        width: 91.66666667%;
+    }
+
+    .ptsc_row .ptsc_col_xl_12 {
+        width: 100%;
+    }
+}
+
+/* Container Responsive Behaviour */
+
+@media print {
+    html, body {
+        width: 750px;
+    }
+}
+
+.ptsc_invoice_container {
+    margin: 15px auto;
+    padding: 70px;
+    max-width: 850px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+@media (max-width: 895px) {
+    .ptsc_invoice_container {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ptsc_invoice_container {
+        padding: 45px 45px 70px 45px;
+    }
+}
+
+@media (max-width: 499px) {
+    .ptsc_invoice_header {
+        text-align: center;
+    }
+}
+
+/* Invoice Status Formatting */
+
+.ptsc_invoice_container .ptsc_invoice_status {
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Invoice Status Colors */
+
+.ptsc_invoice_container .draft {
+    color: #888;
+}
+
+.ptsc_invoice_container .unpaid {
+    color: #cc0000;
+}
+
+.ptsc_invoice_container .paid {
+    color: #779500;
+}
+
+.ptsc_invoice_container .refunded {
+    color: #224488;
+}
+
+.ptsc_invoice_container .cancelled {
+    color: #888;
+}
+
+.ptsc_invoice_container .collections {
+    color: #ffcc00;
+}
+
+/* Payment Button Formatting */
+
+.ptsc_invoice_container .payment-btn-container {
+    margin-top: 5px;
+    text-align: center;
+}
+.ptsc_order_msg{
+    margin-bottom: 15px;
+}
+.ptsc_view_invoice{
+    text-decoration: none;
+}
+
+.ptsc_invoice_container .payment-btn-container table {
+    margin: 0 auto;
+}
+
+/* Text Formatting */
+
+.ptsc_invoice_container .ptsc_small_text {
+    font-size: 0.9em;
+}
+
+/* Invoice Items Table Formatting */
+
+.ptsc_invoice_container td.total-row {
+    background-color: #f8f8f8;
+}
+
+.ptsc_invoice_container td.no-line {
+    border: 0;
+}
+
+.ptsc_invoice_container .ptsc_invoice_header img {
+    max-width: 53%;
+}
+
+.ptsc_invoice_container #ptsc_pay_invoice {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.ptsc_invoice_container .ptsc_text_center {
+    text-align: center;
+}
+
+.ptsc_invoice_container .ptsc_text_right {
+    text-align: right;
+}
+
+.ptsc_invoice_container .ptsc_panel_heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.ptsc_paneltitle {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    color: inherit;
+}
+
+.ptsc_panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+ul.ptsc_navbar_left_sidebar_client {
+    list-style: none;
+    margin: 0;
+    background: #f3ebeb ;
+}
+ul.ptsc_navbar_left_sidebar_client li {
+    padding: 9px 14px;
+}
+
+ul.ptsc_navbar_left_sidebar_client li a {
+    color: #000;
+    text-decoration: none !important;
+}
+ul.ptsc_navbar_left_sidebar_client li.ptsc_ca_active a{
+    color: #fff;
+}
+ul.ptsc_navbar_left_sidebar_client li.ptsc_ca_active{
+    background: #0e5077;
+    color: #fff;
+}
+.ptsc_transparent_btn{
+    color: #2271b1;
+    border-color: #2271b1;
+    background: #f6f7f7;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.ptsc_order_details label {
+    font-size: 13px !important;
+}
+.ptsc_pull_right{
+    float: right;
+}
+.ptsc_inv_pg{
+    width: fit-content !important;
+}
+.ptsc_contct_form_number .intl-tel-input {
+    display: block;
+}
+.ptsc_padding_0 {
+    padding: 0 !important;
+}
+.ptsc_padding_10 {
+    padding: 10px !important;
+}
+.ptsc_padding_0_10 {
+    padding: 0 10px !important;
+}
+.ptsc_padding_5_10 {
+    padding: 5px 10px !important;
+}
+.ptsc_padding_10_0 {
+    padding: 10px 0 !important;
+}
+.ptsc_padding_10_5 {
+    padding: 10px 5px !important;
+}
+.ptsc_padding_15 {
+    padding: 15px !important;
+}
+.ptsc_padding_0_15 {
+    padding: 0 15px !important;
+}
+.ptsc_padding_5_15 {
+    padding: 5px 15px !important;
+}
+.ptsc_padding_10_15 {
+    padding: 10px 15px !important;
+}
+.ptsc_padding_15_0 {
+    padding: 15px 0 !important;
+}
+.ptsc_padding_15_5 {
+    padding: 15px 5px !important;
+}
+.ptsc_padding_15_10 {
+    padding: 15px 10px !important;
+}
