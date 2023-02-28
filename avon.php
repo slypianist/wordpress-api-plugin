@@ -1,6 +1,6 @@
 function avon_api(){
     
-    $URL = 'http://154.113.7.82/AvonHMOGlobalAPI/Api/listofplanbyprovider';
+    $URL = 'https://xxxxxxxxxxxxxxxx';
     
     $arguments = array(
         'method' => 'GET'
